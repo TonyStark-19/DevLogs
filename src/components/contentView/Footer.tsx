@@ -7,7 +7,7 @@ export default function Footer({ daysStreak }: { daysStreak: number }) {
         <footer
             className={`w-full py-6 px-6 md:px-12 lg:px-16 border-t dark:border-zinc-900 border-zinc-200 
             bg-zinc-950/20 dark:bg-zinc-950/20 text-xs dark:text-zinc-500 text-zinc-400 flex flex-col sm:flex-row 
-            justify-between items-center gap-3 select-none mt-12`}
+            justify-between items-center gap-3 select-none mt-6`}
         >
             <div className="flex items-center gap-1">
                 <span>Made with</span>

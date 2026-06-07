@@ -66,8 +66,8 @@ export const ContentView: React.FC<ContentViewProps> = ({ children }) => {
 
             {/* Middle Workspace Layout: Single Scrollable Viewport */}
             <main className="flex-1 overflow-y-auto flex flex-col min-h-full relative z-10 scrollbar-thin dark:scrollbar-thumb-zinc-900 scrollbar-thumb-zinc-200">
-                {/* Core Content Box takes up maximum space pushes footer down */}
-                <div className={`w-full max-w-4xl px-6 py-10 md:px-12 lg:px-16 flex-1 transition-all duration-300 ${hasMentions ? 'mx-auto' : 'mx-0'}`}>
+                {/* Core Content Box */}
+                <div className={`w-full max-w-6xl px-6 py-10 md:px-12 lg:px-16 flex-1 transition-all duration-300 ${hasMentions ? 'mx-auto' : 'mx-0'}`}>
                     {children}
                 </div>
 
