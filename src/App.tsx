@@ -1,5 +1,17 @@
-export default function App() {
+// import react
+import React from 'react';
+
+// import routing components
+import { Routes, Route } from 'react-router-dom';
+
+// import mainpage
+import MainPage from './pages/MainPage';
+
+// main routing app component
+export default function App(): React.JSX.Element {
   return (
-    <h1 className="text-5xl text-amber-800">Hello, World!</h1>
-  )
+    <Routes>
+      <Route path="/*" element={<MainPage />} />
+    </Routes>
+  );
 }
