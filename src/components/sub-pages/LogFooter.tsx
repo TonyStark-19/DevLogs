@@ -1,6 +1,8 @@
+import React from 'react';
+
 // log footer props
 interface LogFooterProps {
-    text: string;
+    text: string | React.ReactNode;
     credits?: React.ReactNode;
 }
 
@@ -19,11 +21,9 @@ export default function LogFooter({ text, credits }: LogFooterProps) {
 
             <div
                 className="p-4 rounded-xl text-center border dark:bg-zinc-950/40 bg-zinc-100/50 border-zinc-200 dark:border-zinc-900 
-                transition-colors duration-300"
+                transition-colors duration-300 text-sm font-medium dark:text-zinc-400 text-zinc-500"
             >
-                <p className="text-sm font-medium dark:text-zinc-400 text-zinc-500 transition-colors duration-300">
-                    {text}
-                </p>
+                {text}
             </div>
         </div>
     );
