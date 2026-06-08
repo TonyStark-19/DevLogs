@@ -10,7 +10,7 @@ import LogFooter from '../../components/sub-pages/LogFooter';
 export default function Intro() {
     return (
         <article
-            className="max-w-6xl mx-auto px-6 py-10"
+            className="max-w-5xl mx-auto px-2 py-10"
             id="Dev-Diary"
         >
             {/* Dynamic Main Header */}
@@ -19,26 +19,33 @@ export default function Intro() {
                 subtitle="Personal bits of learning, open for everyone :)"
             />
 
-            {/* Feature Image */}
-            <div className="relative w-full h-64 md:h-80 rounded-2xl overflow-hidden border border-zinc-200 dark:border-zinc-900 shadow-xl mb-8 bg-zinc-900">
+            {/* Feature Image with Adaptive Gradient Overlay */}
+            <div
+                className="relative w-full h-64 md:h-80 rounded-2xl overflow-hidden border border-zinc-200 dark:border-zinc-900 shadow-xl mb-8 
+                bg-zinc-100 dark:bg-zinc-900 transition-colors duration-300"
+            >
                 <img
                     src="/images/Intro.avif"
                     alt="Abstract dark development workstation illustration"
-                    className="w-full h-full object-cover dark:opacity-80 transition-opacity"
+                    className="w-full h-full object-cover transition-opacity duration-300 dark:opacity-80 light:opacity-100"
                 />
 
-                <div className="absolute inset-0 bg-linear-to-t from-zinc-950/20 to-transparent" />
+                {/* Adaptive background scrim: washes dark in dark mode, softly clear in light mode */}
+                <div
+                    className="absolute inset-0 bg-linear-to-t dark:from-zinc-950/40 from-zinc-50/10 via-transparent to-transparent 
+                    transition-colors duration-300"
+                />
             </div>
 
             {/* Main Core Text Content Description */}
-            <div className="space-y-6 mb-8">
-                <p className="text-base leading-relaxed dark:text-zinc-300 text-zinc-700">
-                    Welcome to <span className="font-bold dark:text-white text-zinc-900">DevLogs</span>!
+            <div className="space-y-6 mb-8 text-[15px] leading-relaxed antialiased">
+                <p className="dark:text-zinc-300 text-zinc-700">
+                    Welcome to <span className="font-bold dark:text-white text-zinc-900">DevLogs</span>!{' '}
                     This is a clean, intentional space where I document my technical journey—breaking down complex projects, architecture lessons, personal
                     code hurdles, and minor insights picked up along the way.
                 </p>
 
-                <p className="text-base leading-relaxed dark:text-zinc-300 text-zinc-700">
+                <p className="dark:text-zinc-300 text-zinc-700">
                     Whether you are a beginner exploring your first state hooks or an experienced engineer organizing microservices, I hope you locate a
                     piece of engineering insight that helps your workflow.
                 </p>
@@ -80,16 +87,16 @@ export default function Intro() {
                 text="Thanks for stopping by! I appreciate your support and would love to hear your thoughts."
                 credits={
                     <>
-                        <p>
+                        <p className="text-zinc-400 dark:text-zinc-500 transition-colors">
                             Inspiration:{' '}
                             <a
                                 href="https://davidgasquez.com"
                                 target="_blank"
                                 rel="noreferrer"
-                                className="underline hover:text-zinc-900 dark:hover:text-white"
+                                className="underline text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
                             >
                                 Handbook
-                            </a>{" "}
+                            </a>{' '}
                             by David Gasquez
                         </p>
                     </>
@@ -97,4 +104,4 @@ export default function Intro() {
             />
         </article>
     );
-};
+}

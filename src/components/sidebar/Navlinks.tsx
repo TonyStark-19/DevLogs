@@ -34,8 +34,9 @@ export default function Navlinks({ sortedAndFilteredLogs, navigate, location }: 
                             <BookOpen
                                 size={15}
                                 className={`transition-colors duration-200 
-                                    ${isActive ? 'dark:text-zinc-950 text-white'
-                                        : 'dark:text-zinc-600 text-zinc-400'
+                                    ${isActive
+                                        ? 'dark:text-zinc-950 text-white'
+                                        : 'dark:text-zinc-600 text-zinc-400 dark:group-hover:text-zinc-400 group-hover:text-zinc-900'
                                     }`}
                             />
 
@@ -49,5 +50,5 @@ export default function Navlinks({ sortedAndFilteredLogs, navigate, location }: 
                 </div>
             )}
         </nav>
-    )
+    );
 }

@@ -19,10 +19,11 @@ export default function FilterSearch({ searchQuery, setSearchQuery }: FilterSear
                     placeholder="Filter logs..."
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
-                    className="w-full pl-9 pr-4 py-2.5 text-sm rounded-xl border outline-none transition-all duration-200 bg-zinc-900/50 dark:bg-zinc-900/50 
-                    border-zinc-800 dark:border-zinc-800 dark:text-zinc-200 text-zinc-800"
+                    className="w-full pl-9 pr-4 py-2.5 text-sm rounded-xl border outline-none transition-all duration-200 
+                    dark:bg-zinc-900/50 dark:border-zinc-800 dark:text-zinc-200 dark:focus:border-zinc-700
+                    bg-zinc-100 border-zinc-200 text-zinc-800 focus:border-zinc-300 focus:bg-white"
                 />
             </div>
         </div>
-    )
+    );
 }

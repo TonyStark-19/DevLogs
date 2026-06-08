@@ -11,8 +11,8 @@ interface ProfileBannerProps {
 export default function ProfileBanner({ setIsDarkMode, isDarkMode }: ProfileBannerProps) {
     return (
         <div
-            className="relative w-full h-48 group overflow-hidden flex flex-col justify-end p-5 bg-linear-to-t from-zinc-950 via-zinc-900/40 to-transparent 
-                dark:from-zinc-950"
+            className="relative w-full h-48 group overflow-hidden flex flex-col justify-end p-5 bg-linear-to-t dark:from-zinc-950 dark:via-zinc-900/40 
+            dark:to-transparent from-zinc-50 via-zinc-100/40 to-transparent"
         >
             <img
                 src="/images/profile.jpg"
@@ -41,5 +41,5 @@ export default function ProfileBanner({ setIsDarkMode, isDarkMode }: ProfileBann
                 </button>
             </div>
         </div>
-    )
+    );
 }

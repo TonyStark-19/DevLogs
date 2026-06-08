@@ -14,7 +14,7 @@ export const LinkedInLink: React.FC<LinkProps> = ({ className = '' }) => {
             target="_blank"
             rel="noreferrer"
             className={`font-medium text-zinc-900 dark:text-zinc-100 underline decoration-zinc-300 dark:decoration-zinc-700 underline-offset-4 
-            hover:text-indigo-500 transition-colors duration-150 ${className}`}
+            hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors duration-300 ease-in-out ${className}`}
         >
             LinkedIn
         </a>
@@ -29,14 +29,14 @@ export const TwitterLink: React.FC<LinkProps> = ({ className = '' }) => {
             target="_blank"
             rel="noreferrer"
             className={`font-medium text-zinc-900 dark:text-zinc-100 underline decoration-zinc-300 dark:decoration-zinc-700 underline-offset-4 
-            hover:text-indigo-500 transition-colors duration-150 ${className}`}
+            hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors duration-300 ease-in-out ${className}`}
         >
             Twitter
         </a>
     );
 };
 
-// Combined Layout Component
+// Combined Layout Component (Default Export)
 export default function SocialLinks(): React.JSX.Element {
     return (
         <>

@@ -53,16 +53,24 @@ const rawLogs: LogItem[] = [
 // Sidebar component definition
 export const Sidebar: React.FC = () => {
     const [searchQuery, setSearchQuery] = useState('');
-    const [isDarkMode, setIsDarkMode] = useState(true);
+
+    // Lazy initializing state from localStorage so it persists on page reloads
+    const [isDarkMode, setIsDarkMode] = useState<boolean>(() => {
+        const savedTheme = localStorage.getItem('theme');
+        return savedTheme ? savedTheme === 'dark' : true; // default to dark mode
+    });
 
     const navigate = useNavigate();
     const location = useLocation();
 
+    // Sync theme adjustments with both DOM token classes and localStorage caches
     useEffect(() => {
         if (isDarkMode) {
             document.documentElement.classList.add('dark');
+            localStorage.setItem('theme', 'dark');
         } else {
             document.documentElement.classList.remove('dark');
+            localStorage.setItem('theme', 'light');
         }
     }, [isDarkMode]);
 
