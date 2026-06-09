@@ -5,10 +5,11 @@ import LogLink from '../../components/sub-pages/LogLink.tsx';
 
 // how to start page component
 export default function HowToStart() {
-    const currentYear = new Date().getFullYear();
-
     return (
-        <article className="max-w-3xl mx-auto px-2 py-10" id="HowToStart">
+        <article
+            className="max-w-3xl mx-auto px-2 py-5"
+            id="HowToStart"
+        >
             {/* Header */}
             <LogHeader
                 title="How to start?"
@@ -20,7 +21,7 @@ export default function HowToStart() {
                 <p>
                     Starting something new, whether it's learning to code, picking up a{' '}
                     <LogLink to="/skills">skill</LogLink>, or making a significant life change,
-                    is often the hardest step—but it’s also the most crucial.
+                    is often the hardest step—but it's also the most crucial.
                 </p>
 
                 <ul className="list-disc pl-5 space-y-2 text-zinc-600 dark:text-zinc-400">
@@ -39,8 +40,8 @@ export default function HowToStart() {
                 </ul>
 
                 <p>
-                    The power lies in simply starting. It’s not about having everything figured out from the
-                    beginning; it’s about taking that first imperfect step.
+                    The power lies in simply starting. It's not about having everything figured out from the
+                    beginning; it's about taking that first imperfect step.
                 </p>
 
                 <ul className="list-disc pl-5 space-y-2 text-zinc-600 dark:text-zinc-400">
@@ -50,7 +51,20 @@ export default function HowToStart() {
                         integrates into your routine, becoming a natural and fulfilling part of your life.
                     </li>
                     <li>
-                        You don’t have to be perfect or even particularly skilled when you start—you just have to begin.
+                        My own journey started exactly like this in my first year of college when the C language was first
+                        introduced. Driven by pure curiosity, I started learning C extensively through the <a
+                            href="https://www.youtube.com/@ApnaCollegeOfficial"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="font-medium text-zinc-900 dark:text-zinc-100 hover:underline 
+                            underline-offset-4 decoration-zinc-400"
+                        >
+                            Apna College
+                        </a> YouTube
+                        channel and ended up building 79 separate programs entirely on my own.
+                    </li>
+                    <li>
+                        You don't have to be perfect or even particularly skilled when you start—you just have to begin.
                     </li>
                 </ul>
 
@@ -65,12 +79,18 @@ export default function HowToStart() {
                         progress and builds momentum.
                     </li>
                     <li>
-                        As you continue, you'll not only learn and <LogLink to="/growth">grow</LogLink>, but you’ll also
+                        I officially started documenting and sharing my engineering progress publicly on LinkedIn on July 9,
+
+                        2024. Just the day before, I had received my laptop and taken a strict oath to show up every single
+                        day—and that consistency has remained a permanent part of my life ever since.
+                    </li>
+                    <li>
+                        As you continue, you'll not only learn and <LogLink to="/growth">grow</LogLink>, but you'll also
                         develop resilience, <LogLink to="/discipline">discipline</LogLink>, and confidence.
                     </li>
                     <li>
                         The journey of starting is less about perfection and more about persistence, and before
-                        you know it, you’ll look back and see how far you’ve come.
+                        you know it, you'll look back and see how far you've come.
                     </li>
                 </ul>
 
@@ -83,31 +103,6 @@ export default function HowToStart() {
             {/* Footer */}
             <LogFooter
                 text="What will your 'Day One' look like? Start now and take the first step!"
-                credits={
-                    <div className="w-full flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-zinc-400 dark:text-zinc-500">
-                        <p>© {currentYear} DevLogs — Aditya Chandel</p>
-
-                        <div className="flex gap-3">
-                            <a
-                                href="https://linkedin.com/in/aditya-chandel-223bb3308"
-                                target="_blank"
-                                rel="noreferrer"
-                                className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
-                            >
-                                LinkedIn
-                            </a>
-
-                            <a
-                                href="https://twitter.com/iamaditya_3"
-                                target="_blank"
-                                rel="noreferrer"
-                                className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
-                            >
-                                Twitter
-                            </a>
-                        </div>
-                    </div>
-                }
             />
         </article>
     );

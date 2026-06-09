@@ -5,10 +5,11 @@ import LogLink from '../../components/sub-pages/LogLink.tsx';
 
 // curiosity page component
 export default function Curiosity() {
-    const currentYear = new Date().getFullYear();
-
     return (
-        <article className="max-w-3xl mx-auto px-2 py-10" id="Curiosity">
+        <article
+            className="max-w-3xl mx-auto px-2 py-5"
+            id="Curiosity"
+        >
             {/* Header */}
             <LogHeader
                 title="Curiosity"
@@ -53,6 +54,12 @@ export default function Curiosity() {
                     <li>
                         Instead of fearing challenges, they view them as opportunities to <LogLink to="/growth">grow</LogLink>,
                         making them more adaptable and resilient in the face of change.
+                    </li>
+                    <li>
+                        For me, curiosity has been around since my childhood. I was so curious growing up that it led to a strong interest in science,
+                        sci-fi movies, technology, and space science. I had an intense urge to learn everything and gain more information each and every day.
+                        As a general knowledge addict, I used to write down tons of GK questions from my daily research. When I got into coding, I channeled
+                        that exact same curiosity to learn, build, improve, and contribute daily.
                     </li>
                 </ul>
 
@@ -99,31 +106,6 @@ export default function Curiosity() {
                     <p>
                         "Stay curious! Explore new technologies, contribute to open-source projects, and never stop learning."
                     </p>
-                }
-                credits={
-                    <div className="w-full flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-zinc-400 dark:text-zinc-500">
-                        <p>© {currentYear} DevLogs — Aditya Chandel</p>
-
-                        <div className="flex gap-3">
-                            <a
-                                href="https://linkedin.com/in/aditya-chandel-223bb3308"
-                                target="_blank"
-                                rel="noreferrer"
-                                className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
-                            >
-                                LinkedIn
-                            </a>
-
-                            <a
-                                href="https://twitter.com/iamaditya_3"
-                                target="_blank"
-                                rel="noreferrer"
-                                className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
-                            >
-                                Twitter
-                            </a>
-                        </div>
-                    </div>
                 }
             />
         </article>

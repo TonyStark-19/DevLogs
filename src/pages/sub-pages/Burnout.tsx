@@ -5,10 +5,11 @@ import LogLink from '../../components/sub-pages/LogLink.tsx';
 
 // burnout page component
 export default function Burnout() {
-    const currentYear = new Date().getFullYear();
-
     return (
-        <article className="max-w-3xl mx-auto px-2 py-10" id="Burnout">
+        <article
+            className="max-w-3xl mx-auto px-2 py-5"
+            id="Burnout"
+        >
             {/* Header */}
             <LogHeader
                 title="Burnout"
@@ -69,6 +70,9 @@ export default function Burnout() {
                         Practicing meditation for ten to twenty minutes daily enhances mental clarity, reduces
                         stress, and improves focus, allowing developers to handle prolonged work sessions more effectively.
                     </li>
+                    <li>
+                        And for me, staying hydrating, taking short breaks, listening to music, and practicing meditation worked a lot to protect my daily momentum.
+                    </li>
                 </ul>
 
                 <p className="border-l-2 border-zinc-300 dark:border-zinc-800 pl-4 italic text-zinc-500 dark:text-zinc-400">
@@ -84,31 +88,6 @@ export default function Burnout() {
                     <p>
                         "Take care of your body and mind—coding is a marathon, not a sprint!"
                     </p>
-                }
-                credits={
-                    <div className="w-full flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-zinc-400 dark:text-zinc-500">
-                        <p>© {currentYear} DevLogs — Aditya Chandel</p>
-
-                        <div className="flex gap-3">
-                            <a
-                                href="https://linkedin.com/in/aditya-chandel-223bb3308"
-                                target="_blank"
-                                rel="noreferrer"
-                                className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
-                            >
-                                LinkedIn
-                            </a>
-
-                            <a
-                                href="https://twitter.com/iamaditya_3"
-                                target="_blank"
-                                rel="noreferrer"
-                                className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
-                            >
-                                Twitter
-                            </a>
-                        </div>
-                    </div>
                 }
             />
         </article>

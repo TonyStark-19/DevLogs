@@ -2,13 +2,15 @@
 import LogHeader from '../../components/sub-pages/LogHeader';
 import LogFooter from '../../components/sub-pages/LogFooter';
 import LogLink from '../../components/sub-pages/LogLink.tsx';
+import SocialLinks from '../../components/sub-pages/SocialLinks.tsx';
 
 // awareness page component
 export default function Awareness() {
-    const currentYear = new Date().getFullYear();
-
     return (
-        <article className="max-w-3xl mx-auto px-2 py-10" id="Awareness">
+        <article
+            className="max-w-3xl mx-auto px-2 py-5"
+            id="Awareness"
+        >
             {/* Header */}
             <LogHeader
                 title="Awareness"
@@ -56,23 +58,7 @@ export default function Awareness() {
 
                 <p>
                     Social media platforms like{' '}
-                    <a
-                        href="https://linkedin.com/in/aditya-chandel-223bb3308"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="font-medium text-zinc-900 dark:text-zinc-100 hover:underline underline-offset-4 decoration-zinc-400"
-                    >
-                        LinkedIn
-                    </a>{' '}
-                    and{' '}
-                    <a
-                        href="https://twitter.com/iamaditya_3"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="font-medium text-zinc-900 dark:text-zinc-100 hover:underline underline-offset-4 decoration-zinc-400"
-                    >
-                        Twitter
-                    </a>{' '}
+                    <SocialLinks /> {" "}
                     are excellent sources of awareness. By following industry experts, engaging with coding communities, and
                     observing how others are making progress, you can gain insights into what is needed to grow.
                 </p>
@@ -81,6 +67,9 @@ export default function Awareness() {
                     <li>
                         Seeing others <LogLink to="/consistency">consistently</LogLink> learning, sharing their projects,
                         and contributing to open-source can serve as both motivation and a wake-up call to take your own journey more seriously.
+                    </li>
+                    <li>
+                        And for me, I got the awareness of coding via LinkedIn and started learning coding extensively in my college's first year.
                     </li>
                 </ul>
 
@@ -122,55 +111,9 @@ export default function Awareness() {
             <LogFooter
                 text={
                     <div className="space-y-2">
-                        <p>
-                            Here is my{' '}
-                            <a
-                                target="_blank"
-                                href="https://linkedin.com/in/aditya-chandel-223bb3308"
-                                rel="noreferrer"
-                                className="underline underline-offset-4 decoration-zinc-400 hover:text-zinc-950 dark:hover:text-zinc-50 transition-colors font-medium"
-                            >
-                                LinkedIn
-                            </a>{' '}
-                            and{' '}
-                            <a
-                                target="_blank"
-                                href="https://twitter.com/iamaditya_3"
-                                rel="noreferrer"
-                                className="underline underline-offset-4 decoration-zinc-400 hover:text-zinc-950 dark:hover:text-zinc-50 transition-colors font-medium"
-                            >
-                                Twitter
-                            </a>
-                            . Let's connect here :)
-                        </p>
-                        <p className="font-medium text-xs text-zinc-400 dark:text-zinc-500">
+                        <p className="font-medium text-sm text-zinc-400 dark:text-zinc-500">
                             "Stay aware, stay ahead. The more you learn, the more you grow!"
                         </p>
-                    </div>
-                }
-                credits={
-                    <div className="w-full flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-zinc-400 dark:text-zinc-500">
-                        <p>© {currentYear} DevLogs — Aditya Chandel</p>
-
-                        <div className="flex gap-3">
-                            <a
-                                href="https://linkedin.com/in/aditya-chandel-223bb3308"
-                                target="_blank"
-                                rel="noreferrer"
-                                className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
-                            >
-                                LinkedIn
-                            </a>
-
-                            <a
-                                href="https://twitter.com/iamaditya_3"
-                                target="_blank"
-                                rel="noreferrer"
-                                className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
-                            >
-                                Twitter
-                            </a>
-                        </div>
                     </div>
                 }
             />

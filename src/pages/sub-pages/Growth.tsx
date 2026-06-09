@@ -2,13 +2,21 @@
 import LogHeader from '../../components/sub-pages/LogHeader';
 import LogFooter from '../../components/sub-pages/LogFooter';
 import LogLink from '../../components/sub-pages/LogLink.tsx';
+import SocialLinks from '../../components/sub-pages/SocialLinks.tsx';
+import useDaysStreak from '../../components/utils/useDaysStreak.tsx';
+
+// streak start data constant
+const STREAK_START = Date.UTC(2024, 6, 9); // July 9, 2024
 
 // growth page component
 export default function Growth() {
-    const currentYear = new Date().getFullYear();
+    const daysStreak = useDaysStreak(STREAK_START);
 
     return (
-        <article className="max-w-3xl mx-auto px-2 py-10" id="Growth">
+        <article
+            className="max-w-3xl mx-auto px-2 py-5"
+            id="Growth"
+        >
             {/* Header */}
             <LogHeader
                 title="Growth"
@@ -34,6 +42,16 @@ export default function Growth() {
                         A growth-oriented developer seeks opportunities to refine their craft and stay relevant
                         in the ever-changing tech landscape.
                     </li>
+                    <li>
+                        For me, real growth has been a compounding timeline that I have witnessed firsthand as I coded consistently and shared my
+                        progress publicly on <SocialLinks /> for more than{" "}
+                        <span
+                            className="font-semibold text-zinc-950 dark:text-zinc-50 bg-zinc-100 dark:bg-zinc-900 px-1.5 py-0.5 rounded border 
+                            border-zinc-200 dark:border-zinc-800"
+                        >
+                            {daysStreak} days
+                        </span>{" "} days straight.
+                    </li>
                 </ul>
 
                 <p>
@@ -51,6 +69,11 @@ export default function Growth() {
                         Learning from mistakes and feedback is also crucial—every bug, error, or failure is an
                         opportunity to gain deeper insights and enhance problem-solving skills.
                     </li>
+                    <li>
+                        With each consecutive #100DaysOfCode challenge I completed, I noticed a dramatic evolution in my raw expertise—especially across
+                        frontend development. Over time, I naturally trained a sharp developer's eye capable of catching alignment errors, layout drops,
+                        or design inconsistencies in a single second, while simultaneously building an intuition for cleaner syntax and production best practices.
+                    </li>
                 </ul>
 
                 <p>
@@ -67,6 +90,10 @@ export default function Growth() {
                     <li>
                         Embracing a growth mindset—one that views challenges as opportunities rather than
                         obstacles—allows developers to remain motivated, resilient, and open to new possibilities.
+                    </li>
+                    <li>
+                        The overall goal throughout this entire journey has been remarkably simple: showing up to improve by just 1% each and every day.
+                        By focusing strictly on that daily marginal gain, real structural growth has naturally followed over time.
                     </li>
                 </ul>
 
@@ -98,31 +125,6 @@ export default function Growth() {
                     <p>
                         “Stay curious and continue to grow your skills! Check out our resources and start your journey today.”
                     </p>
-                }
-                credits={
-                    <div className="w-full flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-zinc-400 dark:text-zinc-500">
-                        <p>© {currentYear} DevLogs — Aditya Chandel</p>
-
-                        <div className="flex gap-3">
-                            <a
-                                href="https://linkedin.com/in/aditya-chandel-223bb3308"
-                                target="_blank"
-                                rel="noreferrer"
-                                className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
-                            >
-                                LinkedIn
-                            </a>
-
-                            <a
-                                href="https://twitter.com/iamaditya_3"
-                                target="_blank"
-                                rel="noreferrer"
-                                className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
-                            >
-                                Twitter
-                            </a>
-                        </div>
-                    </div>
                 }
             />
         </article>

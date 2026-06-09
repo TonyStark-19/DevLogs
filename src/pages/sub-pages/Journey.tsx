@@ -5,10 +5,11 @@ import LogLink from '../../components/sub-pages/LogLink.tsx';
 
 // journey page component
 export default function Journey() {
-    const currentYear = new Date().getFullYear();
-
     return (
-        <article className="max-w-3xl mx-auto px-2 py-10" id="Journey">
+        <article
+            className="max-w-3xl mx-auto px-2 py-5"
+            id="Journey"
+        >
             {/* Header */}
             <LogHeader
                 title="Journey"
@@ -18,7 +19,7 @@ export default function Journey() {
             {/* Body Content Stream */}
             <div className="mt-8 space-y-6 dark:text-zinc-300 text-zinc-700 text-[15px] leading-relaxed antialiased">
                 <p>
-                    The journey of becoming a great developer is not just about writing code; it’s about
+                    The journey of becoming a great developer is not just about writing code; it's about
                     resilience, patience, and continuous <LogLink to="/growth">growth.</LogLink>
                 </p>
 
@@ -72,7 +73,7 @@ export default function Journey() {
                 <p className="border-l-2 border-zinc-300 dark:border-zinc-800 pl-4 italic text-zinc-500 dark:text-zinc-400">
                     Stay committed, push through self-doubt, and embrace the process. Keep refining your
                     skills, keep sharing your progress, and keep building. With persistence, consistency,
-                    and belief in yourself, you won’t just be a developer—you’ll be a great one, capable of
+                    and belief in yourself, you won't just be a developer—you'll be a great one, capable of
                     making a real impact in the tech world.
                 </p>
             </div>
@@ -83,31 +84,6 @@ export default function Journey() {
                     <p>
                         "Start your own journey today by coding at least 1% daily!"
                     </p>
-                }
-                credits={
-                    <div className="w-full flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-zinc-400 dark:text-zinc-500">
-                        <p>© {currentYear} DevLogs — Aditya Chandel</p>
-
-                        <div className="flex gap-3">
-                            <a
-                                href="https://linkedin.com/in/aditya-chandel-223bb3308"
-                                target="_blank"
-                                rel="noreferrer"
-                                className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
-                            >
-                                LinkedIn
-                            </a>
-
-                            <a
-                                href="https://twitter.com/iamaditya_3"
-                                target="_blank"
-                                rel="noreferrer"
-                                className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
-                            >
-                                Twitter
-                            </a>
-                        </div>
-                    </div>
                 }
             />
         </article>

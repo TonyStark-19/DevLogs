@@ -2,13 +2,15 @@
 import LogHeader from '../../components/sub-pages/LogHeader';
 import LogFooter from '../../components/sub-pages/LogFooter';
 import LogLink from '../../components/sub-pages/LogLink.tsx';
+import SocialLinks from '../../components/sub-pages/SocialLinks.tsx';
 
 // mental health page component
 export default function MentalHealth() {
-    const currentYear = new Date().getFullYear();
-
     return (
-        <article className="max-w-3xl mx-auto px-2 py-10" id="MentalHealth">
+        <article
+            className="max-w-3xl mx-auto px-2 py-5"
+            id="MentalHealth"
+        >
             {/* Header */}
             <LogHeader
                 title="Mental health"
@@ -33,6 +35,16 @@ export default function MentalHealth() {
                         to overcoming them lies in self-improvement, self-care, and maintaining a positive{' '}
                         <LogLink to="/mindset">mindset.</LogLink>
                     </li>
+                    <li>
+                        For me, mental health has been something deeply personal. While it might look from the outside like I am just a highly
+                        consistent developer coding daily and building seamlessly in public, only I know the sheer weight of the incredibly tough
+                        days hidden in between.
+                    </li>
+                    <li>
+                        It got intensely hard at points—navigating isolation with no one to talk to, dealing with a poor environment at home, and
+                        fighting off clear signs of depression. I still vividly remember many days where I was writing code while tears literally
+                        hit my laptop's keypad.
+                    </li>
                 </ul>
 
                 <p>
@@ -45,6 +57,11 @@ export default function MentalHealth() {
                         Upskilling, learning new things, and setting goals can give a sense of purpose and
                         direction. Productivity plays a major role in maintaining mental stability—when we feel
                         accomplished, our confidence grows, and our mental health improves.
+                    </li>
+                    <li>
+                        I don't want to dive deep into exactly what happened, how it unfolded, or where I stand right now. All I want to pass on
+                        is that the absolute best thing you can do during these dark phases is to lock in and keep moving around your niche—for me,
+                        anchoring myself entirely to coding was that saving grace.
                     </li>
                     <li>
                         However, it's also important to understand that bad days are normal, and it's okay to
@@ -62,24 +79,13 @@ export default function MentalHealth() {
                     <li>
                         Engaging in creative activities, journaling thoughts, or even maintaining an online
                         presence by sharing progress, like on{' '}
-                        <a
-                            href="https://linkedin.com/in/aditya-chandel-223bb3308"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="font-medium text-zinc-900 dark:text-zinc-100 hover:underline underline-offset-4 decoration-zinc-400"
-                        >
-                            LinkedIn
-                        </a>{' '}
-                        or{' '}
-                        <a
-                            href="https://twitter.com/iamaditya_3"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="font-medium text-zinc-900 dark:text-zinc-100 hover:underline underline-offset-4 decoration-zinc-400"
-                        >
-                            Twitter
-                        </a>
+                        <SocialLinks />
                         , can provide a sense of fulfillment and connection.
+                    </li>
+                    <li>
+                        Consistently journaling my thoughts, forcing myself to talk to trusted connections, and proactively working on my inner
+                        state were the vital pillars I used to slowly overcome those phases. If you are going through it right now, just remember
+                        that you are absolutely not alone. Keep working on yourself, take it one day at a time, and things will get better.
                     </li>
                     <li>
                         Surrounding yourself with positivity, whether through people, content, or experiences,
@@ -104,37 +110,13 @@ export default function MentalHealth() {
                             target="_blank"
                             href="https://twitter.com/iamaditya_3"
                             rel="noreferrer"
-                            className="underline underline-offset-4 decoration-zinc-400 hover:text-zinc-950 dark:hover:text-zinc-50 transition-colors font-medium"
+                            className="underline underline-offset-4 decoration-zinc-400 hover:text-zinc-950 
+                            dark:hover:text-zinc-50 transition-colors font-medium"
                         >
                             Twitter
                         </a>
                         ”
                     </p>
-                }
-                credits={
-                    <div className="w-full flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-zinc-400 dark:text-zinc-500">
-                        <p>© {currentYear} DevLogs — Aditya Chandel</p>
-
-                        <div className="flex gap-3">
-                            <a
-                                href="https://linkedin.com/in/aditya-chandel-223bb3308"
-                                target="_blank"
-                                rel="noreferrer"
-                                className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
-                            >
-                                LinkedIn
-                            </a>
-
-                            <a
-                                href="https://twitter.com/iamaditya_3"
-                                target="_blank"
-                                rel="noreferrer"
-                                className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
-                            >
-                                Twitter
-                            </a>
-                        </div>
-                    </div>
                 }
             />
         </article>

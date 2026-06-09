@@ -10,7 +10,7 @@ import LogFooter from '../../components/sub-pages/LogFooter';
 export default function Intro() {
     return (
         <article
-            className="max-w-5xl mx-auto px-2 py-10"
+            className="max-w-5xl mx-auto px-2 py-5"
             id="Dev-Diary"
         >
             {/* Dynamic Main Header */}
@@ -30,7 +30,7 @@ export default function Intro() {
                     className="w-full h-full object-cover transition-opacity duration-300 dark:opacity-80 light:opacity-100"
                 />
 
-                {/* Adaptive background scrim: washes dark in dark mode, softly clear in light mode */}
+                {/* Adaptive background scrim */}
                 <div
                     className="absolute inset-0 bg-linear-to-t dark:from-zinc-950/40 from-zinc-50/10 via-transparent to-transparent 
                     transition-colors duration-300"

@@ -2,13 +2,15 @@
 import LogHeader from '../../components/sub-pages/LogHeader';
 import LogFooter from '../../components/sub-pages/LogFooter';
 import LogLink from '../../components/sub-pages/LogLink.tsx';
+import SocialLinks from '../../components/sub-pages/SocialLinks.tsx';
 
 // git page component
 export default function Git() {
-    const currentYear = new Date().getFullYear();
-
     return (
-        <article className="max-w-3xl mx-auto px-2 py-10" id="Git">
+        <article
+            className="max-w-3xl mx-auto px-2 py-5"
+            id="Git"
+        >
             {/* Header */}
             <LogHeader
                 title="Git & GitHub"
@@ -34,10 +36,14 @@ export default function Git() {
                         individuals, teams, and large companies to maintain{' '}
                         <LogLink to="/project-building">projects</LogLink> efficiently.
                     </li>
+                    <li>
+                        For me, GitHub has been far more than just a tool—it is a space I use literally every single day. Because I build daily, I have
+                        been actively shipping and iterating directly on my profile, turning code management into a muscle memory habit.
+                    </li>
                 </ul>
 
                 <p>
-                    One of GitHub’s most significant advantages is its role in collaboration and open-source
+                    One of GitHub's most significant advantages is its role in collaboration and open-source
                     development. Many major tech companies and organizations host their repositories on
                     GitHub, allowing developers worldwide to contribute to their projects.
                 </p>
@@ -52,6 +58,10 @@ export default function Git() {
                         enables developers to improve their <LogLink to="/skills">coding skills</LogLink>, understand
                         real-world codebases, and build a strong <LogLink to="/networking">professional network.</LogLink>
                     </li>
+                    <li>
+                        Given my core mantra is continuous upskilling—building projects, improving them with time, and contributing to open source—GitHub
+                        serves as the exact foundation that enables me to bring all three together.
+                    </li>
                 </ul>
 
                 <p>
@@ -62,11 +72,16 @@ export default function Git() {
                 <ul className="list-disc pl-5 space-y-2 text-zinc-600 dark:text-zinc-400">
                     <li>
                         Teams can work on different features simultaneously without interfering with each
-                        other’s progress, ensuring a smooth development workflow.
+                        other's progress, ensuring a smooth development workflow.
                     </li>
                     <li>
                         Additionally, GitHub Actions and CI/CD integrations automate testing and deployment,
                         streamlining the development process.
+                    </li>
+                    <li>
+                        On top of that, each single commit functions as a detailed log, which is an absolute life saver when production environments break.
+                        With version control operations like detailed commit histories, git blame, revert actions, and branch structures, you can pinpoint
+                        exactly what line introduced a critical error and revert breaking changes in seconds.
                     </li>
                 </ul>
 
@@ -84,6 +99,30 @@ export default function Git() {
                         Whether you're working on web development, mobile applications, AI/ML projects, or any
                         other programming-related field, GitHub serves as a hub where developers connect,
                         collaborate, and build impactful projects together.
+                    </li>
+                    <li>
+                        Over time, my personal contribution graph has grown extensively greener and more consistent. I continuously loop back to older
+                        repos to refine code architectures, implement best practices as I pick them up, and improve the documentation of each project so
+                        it remains highly accessible for both my future self and anyone else visiting the repository.
+                    </li>
+                </ul>
+
+                <p>
+                    I also want to address a common hypocrisy prevalent in the tech community. When your profile lacks a solid green commit chart,
+                    people often warn you that it leaves an unfavorable impression on recruiters. Yet, when you actively build a multi-year streak of
+                    daily consistency—mine has passed 550+ days as of June 9, 2026—the narrative shifts, and others claim it doesn't matter, arguing that
+                    cloud hosts are just an insurance baseline against local crashes.
+                </p>
+
+                <ul className="list-disc pl-5 space-y-2 text-zinc-600 dark:text-zinc-400">
+                    <li>
+                        Let me share my honest take on this: when you document your progress across public networks like <SocialLinks />, and ship code
+                        to GitHub daily, you are not doing it for external approval. You are doing it for your own personal growth.
+                    </li>
+                    <li>
+                        The deeper you dive into committing code, the more naturally you begin to think in code. You learn how architectures behave in production,
+                        carve out an authentic profile in open source, learn directly from collective community codebases, and learn how to collaborate better.
+                        Block out the outside noise, focus on your craft, and keep building for yourself.
                     </li>
                 </ul>
 
@@ -103,37 +142,13 @@ export default function Git() {
                             target="_blank"
                             href="https://github.com/TonyStark-19"
                             rel="noreferrer"
-                            className="underline underline-offset-4 decoration-zinc-400 hover:text-zinc-950 dark:hover:text-zinc-50 transition-colors font-medium"
+                            className="underline underline-offset-4 decoration-zinc-400 hover:text-zinc-950 
+                            dark:hover:text-zinc-50 transition-colors font-medium"
                         >
                             GitHub
                         </a>
                         . Let's connect here :)
                     </p>
-                }
-                credits={
-                    <div className="w-full flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-zinc-400 dark:text-zinc-500">
-                        <p>© {currentYear} DevLogs — Aditya Chandel</p>
-
-                        <div className="flex gap-3">
-                            <a
-                                href="https://linkedin.com/in/aditya-chandel-223bb3308"
-                                target="_blank"
-                                rel="noreferrer"
-                                className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
-                            >
-                                LinkedIn
-                            </a>
-
-                            <a
-                                href="https://twitter.com/iamaditya_3"
-                                target="_blank"
-                                rel="noreferrer"
-                                className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
-                            >
-                                Twitter
-                            </a>
-                        </div>
-                    </div>
                 }
             />
         </article>

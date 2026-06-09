@@ -2,13 +2,15 @@
 import LogHeader from '../../components/sub-pages/LogHeader';
 import LogFooter from '../../components/sub-pages/LogFooter';
 import LogLink from '../../components/sub-pages/LogLink.tsx';
+import SocialLinks from '../../components/sub-pages/SocialLinks.tsx';
 
 // competition page component
 export default function Competition() {
-    const currentYear = new Date().getFullYear();
-
     return (
-        <article className="max-w-3xl mx-auto px-2 py-10" id="Competition">
+        <article
+            className="max-w-3xl mx-auto px-2 py-5"
+            id="Competition"
+        >
             {/* Header */}
             <LogHeader
                 title="Competition"
@@ -41,23 +43,7 @@ export default function Competition() {
 
                 <p>
                     One of the biggest mistakes people make is neglecting platforms like{' '}
-                    <a
-                        href="https://linkedin.com/in/aditya-chandel-223bb3308"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="font-medium text-zinc-900 dark:text-zinc-100 hover:underline underline-offset-4 decoration-zinc-400"
-                    >
-                        LinkedIn
-                    </a>{' '}
-                    and{' '}
-                    <a
-                        href="https://twitter.com/iamaditya_3"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="font-medium text-zinc-900 dark:text-zinc-100 hover:underline underline-offset-4 decoration-zinc-400"
-                    >
-                        Twitter
-                    </a>
+                    <SocialLinks />
                     . These are not just social media apps but powerful tools to connect with like-minded individuals,
                     learn from industry experts, and stay updated with the latest trends.
                 </p>
@@ -131,31 +117,6 @@ export default function Competition() {
                         </a>
                         !"
                     </p>
-                }
-                credits={
-                    <div className="w-full flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-zinc-400 dark:text-zinc-500">
-                        <p>© {currentYear} DevLogs — Aditya Chandel</p>
-
-                        <div className="flex gap-3">
-                            <a
-                                href="https://linkedin.com/in/aditya-chandel-223bb3308"
-                                target="_blank"
-                                rel="noreferrer"
-                                className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
-                            >
-                                LinkedIn
-                            </a>
-
-                            <a
-                                href="https://twitter.com/iamaditya_3"
-                                target="_blank"
-                                rel="noreferrer"
-                                className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
-                            >
-                                Twitter
-                            </a>
-                        </div>
-                    </div>
                 }
             />
         </article>
