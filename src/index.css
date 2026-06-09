@@ -1,2 +1,19 @@
 @import "tailwindcss";
+
+/* theme toggle config */
 @custom-variant dark (&:where(.dark, .dark *));
+
+/* grid dots theme */
+:root {
+    --dot-color-1: #d4d4d8;
+    /* Light theme: zinc-300 */
+    --dot-color-2: #e4e4e7;
+    /* Light theme: zinc-200 */
+}
+
+.dark {
+    --dot-color-1: #1a1a1a;
+    /* Dark theme: slightly dimmed from #222 */
+    --dot-color-2: #0f0f0f;
+    /* Dark theme: slightly dimmed from #111 */
+}
