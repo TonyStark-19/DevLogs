@@ -4,15 +4,16 @@ import { useEffect } from "react";
 // import use location
 import { useLocation } from "react-router-dom";
 
-// scroll to top function
-export default function ScrollToTop({ scrollRef }: { scrollRef: null | React.RefObject<HTMLDivElement> }) {
+// scroll to top on route change
+export default function ScrollToTop() {
     const { pathname } = useLocation();
 
     useEffect(() => {
-        if (scrollRef?.current) {
-            scrollRef.current.scrollTo(0, 0);
-        } else {
-            window.scrollTo(0, 0);
+        // Targets the main scrollable workspace by ID
+        const mainContentContainer = document.getElementById("main-scroll-wrapper");
+
+        if (mainContentContainer) {
+            mainContentContainer.scrollTo(0, 0);
         }
     }, [pathname]);
 

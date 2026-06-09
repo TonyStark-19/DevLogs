@@ -1,5 +1,5 @@
 // import react and hooks
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 
 // import routing components
 import { Route, Routes } from "react-router-dom";
@@ -7,7 +7,6 @@ import { Route, Routes } from "react-router-dom";
 // import components
 import { Sidebar } from "../sections/Sidebar";
 import { ContentView } from "../sections/ContentView";
-import ScrollToTop from "../components/utils/Scroltotop";
 
 // import pages
 import Intro from "./sub-pages/Intro";
@@ -43,8 +42,6 @@ import OpenSource from "./sub-pages/OpenSource";
 
 // main page component
 export default function MainPage(): React.JSX.Element {
-    const scrollRef = useRef<HTMLDivElement | null>(null);
-
     // State management for responsive mobile drawer overlays
     const [isSidebarOpen, setIsSidebarOpen] = useState<boolean>(false);
 
@@ -53,9 +50,7 @@ export default function MainPage(): React.JSX.Element {
             {/* Left Sidebar Layout */}
             <div
                 className={`fixed inset-y-0 left-0 z-50 transform md:relative md:translate-x-0 transition-transform duration-300 ease-in-out 
-                    ${isSidebarOpen ? "translate-x-0"
-                        : "-translate-x-full"
-                    }`}
+                    ${isSidebarOpen ? "translate-x-0" : "-translate-x-full"}`}
             >
                 <Sidebar />
             </div>
@@ -68,15 +63,8 @@ export default function MainPage(): React.JSX.Element {
                 />
             )}
 
-            {/* Main Fluid Content Container Area */}
-            <div
-                ref={scrollRef}
-                className="flex-1 h-full overflow-y-auto flex flex-col relative scroll-smooth"
-            >
-                {/* Fixed reference utility hook passing to target scroll positions */}
-                <ScrollToTop scrollRef={null} />
-
-                {/* Routing Outlet for Diary Pages */}
+            {/* Main Content Area Container */}
+            <div className="flex-1 h-full flex flex-col relative">
                 <ContentView>
                     <Routes>
                         <Route path="/" element={<Intro />} />
