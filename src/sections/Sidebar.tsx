@@ -18,7 +18,7 @@ export interface LogItem {
 
 // log page data
 const rawLogs: LogItem[] = [
-    { id: 'Dev-Diary', title: 'What is DevLogs?', path: '/' },
+    { id: 'DevLogs', title: 'What is DevLogs?', path: '/' },
     { id: 'Consistency', title: 'Consistency', path: '/consistency' },
     { id: 'How-to-start', title: 'How to start?', path: '/how-to-start' },
     { id: 'Procastination', title: 'Procastination', path: '/procastination' },
@@ -78,8 +78,8 @@ export const Sidebar: React.FC = () => {
         return rawLogs
             .filter((log) => log.title.toLowerCase().includes(searchQuery.toLowerCase()))
             .sort((a, b) => {
-                if (a.id === 'Dev-Diary') return -1;
-                if (b.id === 'Dev-Diary') return 1;
+                if (a.id === 'DevLogs') return -1;
+                if (b.id === 'DevLogs') return 1;
                 return a.title.localeCompare(b.title);
             });
     }, [searchQuery]);
