@@ -26,6 +26,20 @@ import MentalHealth from "./sub-pages/MentalHealth";
 import PhysicalHealth from "./sub-pages/PhysicalHealth";
 import Productivity from "./sub-pages/Productivity";
 import Awareness from "./sub-pages/Awareness";
+import Competition from "./sub-pages/Competition";
+import ChatGPT from "./sub-pages/ChatGPT";
+import Hobbies from "./sub-pages/Hobbies";
+import Music from "./sub-pages/Music";
+import MyJourney from "./sub-pages/MyJourney";
+import Mindset from "./sub-pages/Mindset";
+import Curiosity from "./sub-pages/Curiosity";
+import Journey from "./sub-pages/Journey";
+import Skills from "./sub-pages/Skills";
+import SoftSkills from "./sub-pages/SoftSkills";
+import Burnout from "./sub-pages/Burnout";
+import Growth from "./sub-pages/Growth";
+import Discipline from "./sub-pages/Discipline";
+import OpenSource from "./sub-pages/OpenSource";
 
 // main page component
 export default function MainPage(): React.JSX.Element {
@@ -81,6 +95,20 @@ export default function MainPage(): React.JSX.Element {
                         <Route path="/physical-health" element={<PhysicalHealth />} />
                         <Route path="/productivity" element={<Productivity />} />
                         <Route path="/awareness" element={<Awareness />} />
+                        <Route path="/competition" element={<Competition />} />
+                        <Route path="/chatgpt" element={<ChatGPT />} />
+                        <Route path="/hobbies" element={<Hobbies />} />
+                        <Route path="/music" element={<Music />} />
+                        <Route path="/my-journey" element={<MyJourney />} />
+                        <Route path="/mindset" element={<Mindset />} />
+                        <Route path="/curiosity" element={<Curiosity />} />
+                        <Route path="/journey" element={<Journey />} />
+                        <Route path="/skills" element={<Skills />} />
+                        <Route path="/soft-skills" element={<SoftSkills />} />
+                        <Route path="/burnout" element={<Burnout />} />
+                        <Route path="/growth" element={<Growth />} />
+                        <Route path="/discipline" element={<Discipline />} />
+                        <Route path="/open-source" element={<OpenSource />} />
                     </Routes>
                 </ContentView>
             </div>
