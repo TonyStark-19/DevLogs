@@ -5,10 +5,11 @@ import LogLink from '../../components/sub-pages/LogLink.tsx';
 
 // skills page component
 export default function Skills() {
-    const currentYear = new Date().getFullYear();
-
     return (
-        <article className="max-w-3xl mx-auto px-2 py-10" id="Skills">
+        <article
+            className="max-w-3xl mx-auto px-2 py-5"
+            id="Skills"
+        >
             {/* Header */}
             <LogHeader
                 title="Skills"
@@ -18,7 +19,7 @@ export default function Skills() {
             {/* Body Content Stream */}
             <div className="mt-8 space-y-6 dark:text-zinc-300 text-zinc-700 text-[15px] leading-relaxed antialiased">
                 <p>
-                    Skills are the backbone of success in today’s fast-paced and ever-evolving tech industry.
+                    Skills are the backbone of success in today's fast-paced and ever-evolving tech industry.
                 </p>
 
                 <ul className="list-disc pl-5 space-y-2 text-zinc-600 dark:text-zinc-400">
@@ -39,7 +40,7 @@ export default function Skills() {
 
                 <ul className="list-disc pl-5 space-y-2 text-zinc-600 dark:text-zinc-400">
                     <li>
-                        Mastery doesn’t come overnight—it requires continuous learning, regular practice, and
+                        Mastery doesn't come overnight—it requires continuous learning, regular practice, and
                         hands-on project building. Working on real-world projects helps reinforce concepts,
                         improve efficiency, and boost confidence in applying knowledge practically.
                     </li>
@@ -60,7 +61,7 @@ export default function Skills() {
                         lifelong learning is what separates skilled professionals from the rest.
                     </li>
                     <li>
-                        It’s also important to stay updated with industry trends, explore new technologies, and
+                        It's also important to stay updated with industry trends, explore new technologies, and
                         learn from experienced professionals. Collaboration, <LogLink to="/networking">networking</LogLink>, and seeking mentorship
                         can accelerate skill development by providing fresh perspectives and insights.
                     </li>
@@ -83,7 +84,7 @@ export default function Skills() {
                 </ul>
 
                 <p className="border-l-2 border-zinc-300 dark:border-zinc-800 pl-4 italic text-zinc-500 dark:text-zinc-400">
-                    Ultimately, success in tech isn’t just about what you know—it’s about how well you apply
+                    Ultimately, success in tech isn't just about what you know—it's about how well you apply
                     what you know. The journey of skill development is ongoing, and those who commit to
                     continuous learning and self-improvement will always stay ahead in the game.
                 </p>
@@ -95,31 +96,6 @@ export default function Skills() {
                     <p>
                         “Building skills is a continuous journey, and every small step counts. Stay consistent and keep pushing forward!”
                     </p>
-                }
-                credits={
-                    <div className="w-full flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-zinc-400 dark:text-zinc-500">
-                        <p>© {currentYear} DevLogs — Aditya Chandel</p>
-
-                        <div className="flex gap-3">
-                            <a
-                                href="https://linkedin.com/in/aditya-chandel-223bb3308"
-                                target="_blank"
-                                rel="noreferrer"
-                                className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
-                            >
-                                LinkedIn
-                            </a>
-
-                            <a
-                                href="https://twitter.com/iamaditya_3"
-                                target="_blank"
-                                rel="noreferrer"
-                                className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
-                            >
-                                Twitter
-                            </a>
-                        </div>
-                    </div>
                 }
             />
         </article>

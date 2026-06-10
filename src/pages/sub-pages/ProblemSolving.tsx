@@ -5,10 +5,11 @@ import LogLink from '../../components/sub-pages/LogLink.tsx';
 
 // problem solving page component
 export default function ProblemSolving() {
-    const currentYear = new Date().getFullYear();
-
     return (
-        <article className="max-w-3xl mx-auto px-2 py-10" id="ProblemSolving">
+        <article
+            className="max-w-3xl mx-auto px-2 py-5"
+            id="ProblemSolving"
+        >
             {/* Header */}
             <LogHeader
                 title="Problem solving"
@@ -24,7 +25,7 @@ export default function ProblemSolving() {
 
                 <ul className="list-disc pl-5 space-y-2 text-zinc-600 dark:text-zinc-400">
                     <li>
-                        It’s a <LogLink to="/skills">skill</LogLink> that allows developers to analyze problems, devise efficient
+                        It's a <LogLink to="/skills">skill</LogLink> that allows developers to analyze problems, devise efficient
                         solutions, and write code that addresses complex scenarios.
                     </li>
                     <li>
@@ -45,7 +46,7 @@ export default function ProblemSolving() {
 
                 <ul className="list-disc pl-5 space-y-2 text-zinc-600 dark:text-zinc-400">
                     <li>
-                        Being proficient in DSA not only improves one’s chances of cracking these interviews but
+                        Being proficient in DSA not only improves one's chances of cracking these interviews but
                         also sharpens the ability to write efficient, scalable, and optimized code.
                     </li>
                     <li>
@@ -145,31 +146,6 @@ export default function ProblemSolving() {
                         "Bill Gates once said, 'I choose a lazy person to do a hard job because they will find an easy
                         way to do it.' This reflects the power of creative problem-solving in programming."
                     </p>
-                }
-                credits={
-                    <div className="w-full flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-zinc-400 dark:text-zinc-500">
-                        <p>© {currentYear} DevLogs — Aditya Chandel</p>
-
-                        <div className="flex gap-3">
-                            <a
-                                href="https://linkedin.com/in/aditya-chandel-223bb3308"
-                                target="_blank"
-                                rel="noreferrer"
-                                className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
-                            >
-                                LinkedIn
-                            </a>
-
-                            <a
-                                href="https://twitter.com/iamaditya_3"
-                                target="_blank"
-                                rel="noreferrer"
-                                className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
-                            >
-                                Twitter
-                            </a>
-                        </div>
-                    </div>
                 }
             />
         </article>

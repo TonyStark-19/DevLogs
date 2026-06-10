@@ -5,10 +5,11 @@ import LogLink from '../../components/sub-pages/LogLink.tsx';
 
 // my journey page component
 export default function MyJourney() {
-    const currentYear = new Date().getFullYear();
-
     return (
-        <article className="max-w-3xl mx-auto px-2 py-10" id="MyJourney">
+        <article
+            className="max-w-3xl mx-auto px-2 py-5"
+            id="MyJourney"
+        >
             {/* Header */}
             <LogHeader
                 title="My coding journey"
@@ -46,7 +47,7 @@ export default function MyJourney() {
                     </li>
                     <li>
                         My approach was simple yet powerful: I asked myself, “What can be converted into a
-                        program?” This <LogLink to="/mindset">mindset</LogLink> led me to build over 80 C programs,
+                        program?” This <LogLink to="/mindset">mindset</LogLink> led me to build over 79 C programs,
                         including a 928-line <LogLink to="/project-building">project</LogLink> on number system conversion, where I applied
                         functions extensively. This progress caused my logic-building <LogLink to="/skills">skills</LogLink> to <LogLink to="/growth">grow.</LogLink>
                     </li>
@@ -54,13 +55,13 @@ export default function MyJourney() {
 
                 <p>
                     As my interest in coding grew, I decided to explore web development. I started learning
-                    HTML and CSS through Apna College’s YouTube channel.
+                    HTML and CSS through Apna College's YouTube channel.
                 </p>
 
                 <ul className="list-disc pl-5 space-y-2 text-zinc-600 dark:text-zinc-400">
                     <li>
-                        However, I faced a major obstacle—I didn’t have a laptop, which made hands-on practice
-                        difficult. But that didn’t stop me. In June, I finally got my first laptop, and that was
+                        However, I faced a major obstacle—I didn't have a laptop, which made hands-on practice
+                        difficult. But that didn't stop me. In June, I finally got my first laptop, and that was
                         a turning point in my journey.
                     </li>
                     <li>
@@ -71,7 +72,7 @@ export default function MyJourney() {
                             rel="noreferrer"
                             className="font-medium text-zinc-900 dark:text-zinc-100 hover:underline underline-offset-4 decoration-zinc-400"
                         >
-                            Amazon website clone from Apna College’s tutorial.
+                            Amazon website clone from Apna College's tutorial.
                         </a>{' '}
                         Then I followed{' '}
                         <a
@@ -80,7 +81,7 @@ export default function MyJourney() {
                             rel="noreferrer"
                             className="font-medium text-zinc-900 dark:text-zinc-100 hover:underline underline-offset-4 decoration-zinc-400"
                         >
-                            Coding Lab’s YouTube tutorials
+                            Coding Lab's YouTube tutorials
                         </a>
                         , and began building numerous HTML-CSS mini-projects, which I integrated into my{' '}
                         <a
@@ -161,7 +162,7 @@ export default function MyJourney() {
                         rel="noreferrer"
                         className="font-medium text-zinc-900 dark:text-zinc-100 hover:underline underline-offset-4 decoration-zinc-400"
                     >
-                        Data Structures and Algorithms (DSA) using Apna College’s playlist.
+                        Data Structures and Algorithms (DSA) using Apna College's playlist.
                     </a>{' '}
                     Learning DSA has been a new and exciting challenge, helping me build strong{' '}
                     <LogLink to="/problem-solving">problem-solving skills</LogLink> and preparing me for
@@ -184,6 +185,29 @@ export default function MyJourney() {
                         HackerRank.
                     </a>
                 </p>
+
+                <p>
+                    Building on that algorithmic foundation, my focus shifted toward shipping production-grade systems and expanding real-world experience.
+                </p>
+
+                <ul className="list-disc pl-5 space-y-2 text-zinc-600 dark:text-zinc-400">
+                    <li>
+                        Alongside my personal builds, I continuously took on and executed freelance projects, bridging client requirements with scalable
+                        clean code layouts.
+                    </li>
+                    <li>
+                        I scaled my community impact via Open Source Connect Global, where I was selected as a top contributor out of more than 4,000 global
+                        participants. This selection pushed me into Phase 2, where I spent valuable hours collaborating directly on a massive full-stack architecture.
+                    </li>
+                    <li>
+                        Shortly after, I took on an engineering internship at Krutrim Insights. There, I was responsible for developing their core company
+                        website alongside an incredibly complex administrative, mentor, and student portal infrastructure entirely backed by AWS cloud services.
+                    </li>
+                    <li>
+                        Today, all of those compounding daily layers have culminated in my first full-time role, where I am working as an AI Product Developer
+                        at Shikhram to build next-generation applications.
+                    </li>
+                </ul>
 
                 <p>Now, coding has become an integral part of my life.</p>
 
@@ -210,7 +234,7 @@ export default function MyJourney() {
                 </ul>
 
                 <p className="border-l-2 border-zinc-300 dark:border-zinc-800 pl-4 italic text-zinc-500 dark:text-zinc-400">
-                    To document my learning experiences, I started a project called Dev Diary, where I
+                    To document my learning experiences, I started this project called DevLogs, where I
                     summarize everything I have learned so far. As I continue exploring deeper aspects of coding, I will keep
                     adding more insights to it. My journey is far from over—this is just the beginning, and I am excited to see
                     where it takes me next!
@@ -223,31 +247,6 @@ export default function MyJourney() {
                     <p>
                         “The only way to do great work is to love what you do.” — Steve Jobs
                     </p>
-                }
-                credits={
-                    <div className="w-full flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-zinc-400 dark:text-zinc-500">
-                        <p>© {currentYear} DevLogs — Aditya Chandel</p>
-
-                        <div className="flex gap-3">
-                            <a
-                                href="https://linkedin.com/in/aditya-chandel-223bb3308"
-                                target="_blank"
-                                rel="noreferrer"
-                                className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
-                            >
-                                LinkedIn
-                            </a>
-
-                            <a
-                                href="https://twitter.com/iamaditya_3"
-                                target="_blank"
-                                rel="noreferrer"
-                                className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
-                            >
-                                Twitter
-                            </a>
-                        </div>
-                    </div>
                 }
             />
         </article>

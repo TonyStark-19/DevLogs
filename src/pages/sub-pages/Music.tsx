@@ -5,10 +5,11 @@ import LogLink from '../../components/sub-pages/LogLink.tsx';
 
 // music page component
 export default function Music() {
-    const currentYear = new Date().getFullYear();
-
     return (
-        <article className="max-w-3xl mx-auto px-2 py-10" id="Music">
+        <article
+            className="max-w-3xl mx-auto px-2 py-5"
+            id="Music"
+        >
             {/* Header */}
             <LogHeader
                 title="Music"
@@ -26,6 +27,10 @@ export default function Music() {
                     <li>
                         It has played a significant role in my life, helping me stay mentally strong and
                         emotionally balanced.
+                    </li>
+                    <li>
+                        For me, this emotional grounding comes from listening to a wide variety of music across completely different genres and languages. 
+                        I frequently cycle through tracks in Hindi, English, Spanish, Punjabi, and Urdu depending on where my head is at.
                     </li>
                     <li>
                         The ability of music to regulate emotions makes it a great companion, especially during
@@ -64,14 +69,23 @@ export default function Music() {
                     <li>
                         Platforms like{' '}
                         <a
-                            href="https://open.spotify.com/"
+                            href="https://open.spotify.com/user/3144dse2ga5ij26naaky2x3xml7a?si=52e8ae4e5ea74526"
                             target="_blank"
                             rel="noreferrer"
                             className="font-medium text-zinc-900 dark:text-zinc-100 hover:underline underline-offset-4 decoration-zinc-400"
                         >
                             Spotify
                         </a>{' '}
-                        make it easy to explore new genres, discover inspiring tracks, and curate playlists that suit different moods and activities.
+                        make it easy to explore new genres, discover inspiring tracks, and curate playlists that suit different moods and activities. 
+                        You can check out what I’m tracking through my active updates directly on my{' '}
+                        <a
+                            href="https://open.spotify.com/user/3144dse2ga5ij26naaky2x3xml7a?si=52e8ae4e5ea74526"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="font-medium text-zinc-900 dark:text-zinc-100 hover:underline underline-offset-4 decoration-zinc-400"
+                        >
+                            Spotify Profile
+                        </a>.
                     </li>
                 </ul>
 
@@ -86,33 +100,8 @@ export default function Music() {
             <LogFooter
                 text={
                     <p>
-                        "Where words fail, music speaks." – Hans Christian Andersen
+                        "Where words fail, music speaks." - Hans Christian Andersen
                     </p>
-                }
-                credits={
-                    <div className="w-full flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-zinc-400 dark:text-zinc-500">
-                        <p>© {currentYear} DevLogs — Aditya Chandel</p>
-
-                        <div className="flex gap-3">
-                            <a
-                                href="https://linkedin.com/in/aditya-chandel-223bb3308"
-                                target="_blank"
-                                rel="noreferrer"
-                                className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
-                            >
-                                LinkedIn
-                            </a>
-
-                            <a
-                                href="https://twitter.com/iamaditya_3"
-                                target="_blank"
-                                rel="noreferrer"
-                                className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
-                            >
-                                Twitter
-                            </a>
-                        </div>
-                    </div>
                 }
             />
         </article>

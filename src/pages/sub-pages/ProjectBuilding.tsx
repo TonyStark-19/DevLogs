@@ -5,10 +5,11 @@ import LogLink from '../../components/sub-pages/LogLink.tsx';
 
 // project building page component
 export default function ProjectBuilding() {
-    const currentYear = new Date().getFullYear();
-
     return (
-        <article className="max-w-3xl mx-auto px-2 py-10" id="ProjectBuilding">
+        <article
+            className="max-w-3xl mx-auto px-2 py-5"
+            id="ProjectBuilding"
+        >
             {/* Header */}
             <LogHeader
                 title="Project building"
@@ -32,6 +33,11 @@ export default function ProjectBuilding() {
                         These initial projects, like creating static web pages or simple UI components, help you
                         build confidence and establish a strong foundation.
                     </li>
+                    <li>
+                        For me, my personal mantra has always been centered around building more and more projects. I find that constantly
+                        shipping software is the best way to directly channel my creativity, sharpen my practical problem-solving skills,
+                        and bring community-driven project ideas to life.
+                    </li>
                 </ul>
 
                 <p>
@@ -52,7 +58,7 @@ export default function ProjectBuilding() {
                 </ul>
 
                 <p>
-                    Once you’ve gained proficiency, brainstorming unique ideas is the next step. These ideas
+                    Once you've gained proficiency, brainstorming unique ideas is the next step. These ideas
                     can tackle real-world problems or address gaps in the current market.
                 </p>
 
@@ -61,6 +67,27 @@ export default function ProjectBuilding() {
                         Examples include creating tools for <LogLink to="/mental-health">mental health</LogLink> tracking,
                         community-building platforms, or budget management applications. By doing so, you demonstrate creativity
                         and the ability to innovate.
+                    </li>
+                    <li>
+                        I fully intend to continue building and launching more unique ideas along my journey. You can track my live setups
+                        and explore the systems I design directly on my{" "}
+                        <a
+                            href="https://aditya-devfolio-one.vercel.app"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="font-medium text-zinc-900 dark:text-zinc-100 hover:underline underline-offset-4 decoration-zinc-400"
+                        >
+                            Portfolio Website
+                        </a> or inspect the code repositories over on my{" "}
+
+                        <a
+                            href="https://github.com/TonyStark-19"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="font-medium text-zinc-900 dark:text-zinc-100 hover:underline underline-offset-4 decoration-zinc-400"
+                        >
+                            GitHub Profile
+                        </a>.
                     </li>
                 </ul>
 
@@ -88,45 +115,21 @@ export default function ProjectBuilding() {
                 text={
                     <div className="space-y-2">
                         <p>
-                            “Ready to start your first project? Check out{' '}
+                            “Ready to start your first project? <br /> <br />Check out{' '}
                             <a
                                 target="_blank"
                                 href="https://html-css-projects-phi.vercel.app/"
                                 rel="noreferrer"
-                                className="underline underline-offset-4 decoration-zinc-400 hover:text-zinc-950 dark:hover:text-zinc-50 transition-colors font-medium"
+                                className="underline underline-offset-4 decoration-zinc-400 hover:text-zinc-950 dark:hover:text-zinc-50 
+                                transition-colors font-medium"
                             >
-                                My HTML-CSS Mini Projects Website.
+                                My HTML-CSS Mini Projects Website. <br /><br />
                             </a>
                             ” This website is filled with numerous HTML-CSS mini projects to begin your web dev journey.
                         </p>
                         <p className="text-xs text-zinc-400 dark:text-zinc-500 italic">
                             You can star it if you find it useful!
                         </p>
-                    </div>
-                }
-                credits={
-                    <div className="w-full flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-zinc-400 dark:text-zinc-500">
-                        <p>© {currentYear} DevLogs — Aditya Chandel</p>
-
-                        <div className="flex gap-3">
-                            <a
-                                href="https://linkedin.com/in/aditya-chandel-223bb3308"
-                                target="_blank"
-                                rel="noreferrer"
-                                className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
-                            >
-                                LinkedIn
-                            </a>
-
-                            <a
-                                href="https://twitter.com/iamaditya_3"
-                                target="_blank"
-                                rel="noreferrer"
-                                className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
-                            >
-                                Twitter
-                            </a>
-                        </div>
                     </div>
                 }
             />
