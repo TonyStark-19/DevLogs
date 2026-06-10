@@ -11,7 +11,7 @@ import type { InternalMention } from '../../sections/ContentView';
 export default function RightSidebar({ internalLinks }: { internalLinks: InternalMention[] }) {
     return (
         <aside
-            className="w-64 h-screen hidden xl:flex flex-col shrink-0 border-l z-10 p-6
+            className="w-64 h-screen flex flex-col shrink-0 border-l z-10 p-6
             dark:bg-zinc-950 dark:border-zinc-900 dark:text-zinc-400 bg-zinc-50 border-zinc-200 text-zinc-500
             overflow-y-auto scrollbar-none transition-colors duration-300 sticky top-0"
         >

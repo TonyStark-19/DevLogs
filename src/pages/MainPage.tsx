@@ -4,9 +4,12 @@ import React, { useState } from "react";
 // import routing components
 import { Route, Routes } from "react-router-dom";
 
+// import navbar
+import Navbar from "../components/navbar/Navbar";
+
 // import components
-import { Sidebar } from "../sections/Sidebar";
-import { ContentView } from "../sections/ContentView";
+import Sidebar from "../sections/Sidebar";
+import ContentView from "../sections/ContentView";
 
 // import pages
 import Intro from "./sub-pages/Intro";
@@ -42,63 +45,67 @@ import OpenSource from "./sub-pages/OpenSource";
 
 // main page component
 export default function MainPage(): React.JSX.Element {
-    // State management for responsive mobile drawer overlays
     const [isSidebarOpen, setIsSidebarOpen] = useState<boolean>(false);
+    const [isLinksOpen, setIsLinksOpen] = useState<boolean>(false);
 
     return (
-        <div className="w-full h-screen flex flex-col md:flex-row transition-colors duration-300 dark:bg-zinc-950 bg-zinc-50 overflow-hidden">
+        <div className="w-full h-screen flex flex-col xl:flex-row transition-colors duration-300 dark:bg-zinc-950 bg-zinc-50 overflow-hidden">
             {/* Left Sidebar Layout */}
-            <div
-                className={`fixed inset-y-0 left-0 z-50 transform md:relative md:translate-x-0 transition-transform duration-300 ease-in-out 
-                    ${isSidebarOpen ? "translate-x-0" : "-translate-x-full"}`}
-            >
-                <Sidebar />
-            </div>
-
-            {/* Backdrop overlay layer when mobile drawer layout is open/active */}
-            {isSidebarOpen && (
-                <div
-                    onClick={() => setIsSidebarOpen(false)}
-                    className="fixed inset-0 bg-black/60 backdrop-blur-sm z-40 md:hidden transition-opacity"
-                />
-            )}
+            <Sidebar
+                isOpen={isSidebarOpen}
+                onClose={() => setIsSidebarOpen(false)}
+            />
 
             {/* Main Content Area Container */}
-            <div className="flex-1 h-full flex flex-col relative">
-                <ContentView>
-                    <Routes>
-                        <Route path="/" element={<Intro />} />
-                        <Route path="/consistency" element={<Consistency />} />
-                        <Route path="/how-to-start" element={<HowToStart />} />
-                        <Route path="/procastination" element={<Procastination />} />
-                        <Route path="/time-management" element={<TimeManagement />} />
-                        <Route path="/podcast" element={<Podcast />} />
-                        <Route path="/youtube-channels" element={<YoutubeChannels />} />
-                        <Route path="/networking" element={<Networking />} />
-                        <Route path="/project-building" element={<ProjectBuilding />} />
-                        <Route path="/problem-solving" element={<ProblemSolving />} />
-                        <Route path="/dedication" element={<Dedication />} />
-                        <Route path="/git" element={<Git />} />
-                        <Route path="/mental-health" element={<MentalHealth />} />
-                        <Route path="/physical-health" element={<PhysicalHealth />} />
-                        <Route path="/productivity" element={<Productivity />} />
-                        <Route path="/awareness" element={<Awareness />} />
-                        <Route path="/competition" element={<Competition />} />
-                        <Route path="/chatgpt" element={<ChatGPT />} />
-                        <Route path="/hobbies" element={<Hobbies />} />
-                        <Route path="/music" element={<Music />} />
-                        <Route path="/my-journey" element={<MyJourney />} />
-                        <Route path="/mindset" element={<Mindset />} />
-                        <Route path="/curiosity" element={<Curiosity />} />
-                        <Route path="/journey" element={<Journey />} />
-                        <Route path="/skills" element={<Skills />} />
-                        <Route path="/soft-skills" element={<SoftSkills />} />
-                        <Route path="/burnout" element={<Burnout />} />
-                        <Route path="/growth" element={<Growth />} />
-                        <Route path="/discipline" element={<Discipline />} />
-                        <Route path="/open-source" element={<OpenSource />} />
-                    </Routes>
-                </ContentView>
+            <div className="flex-1 h-full flex flex-col relative overflow-hidden">
+                {/* Mobile Top Navbar*/}
+                <Navbar
+                    isSidebarOpen={isSidebarOpen}
+                    setIsSidebarOpen={setIsSidebarOpen}
+                    isLinksOpen={isLinksOpen}
+                    setIsRightSidebarOpen={setIsLinksOpen}
+                />
+
+                {/* Content rendering viewport */}
+                <div className="flex-1 overflow-hidden flex flex-col">
+                    <ContentView
+                        isLinksOpen={isLinksOpen}
+                        setIsLinksOpen={setIsLinksOpen}
+                    >
+                        <Routes>
+                            <Route path="/" element={<Intro />} />
+                            <Route path="/consistency" element={<Consistency />} />
+                            <Route path="/how-to-start" element={<HowToStart />} />
+                            <Route path="/procastination" element={<Procastination />} />
+                            <Route path="/time-management" element={<TimeManagement />} />
+                            <Route path="/podcast" element={<Podcast />} />
+                            <Route path="/youtube-channels" element={<YoutubeChannels />} />
+                            <Route path="/networking" element={<Networking />} />
+                            <Route path="/project-building" element={<ProjectBuilding />} />
+                            <Route path="/problem-solving" element={<ProblemSolving />} />
+                            <Route path="/dedication" element={<Dedication />} />
+                            <Route path="/git" element={<Git />} />
+                            <Route path="/mental-health" element={<MentalHealth />} />
+                            <Route path="/physical-health" element={<PhysicalHealth />} />
+                            <Route path="/productivity" element={<Productivity />} />
+                            <Route path="/awareness" element={<Awareness />} />
+                            <Route path="/competition" element={<Competition />} />
+                            <Route path="/chatgpt" element={<ChatGPT />} />
+                            <Route path="/hobbies" element={<Hobbies />} />
+                            <Route path="/music" element={<Music />} />
+                            <Route path="/my-journey" element={<MyJourney />} />
+                            <Route path="/mindset" element={<Mindset />} />
+                            <Route path="/curiosity" element={<Curiosity />} />
+                            <Route path="/journey" element={<Journey />} />
+                            <Route path="/skills" element={<Skills />} />
+                            <Route path="/soft-skills" element={<SoftSkills />} />
+                            <Route path="/burnout" element={<Burnout />} />
+                            <Route path="/growth" element={<Growth />} />
+                            <Route path="/discipline" element={<Discipline />} />
+                            <Route path="/open-source" element={<OpenSource />} />
+                        </Routes>
+                    </ContentView>
+                </div>
             </div>
         </div>
     );

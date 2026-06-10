@@ -7,7 +7,7 @@ interface LogHeaderProps {
 // log header component
 export default function LogHeader({ title, subtitle }: LogHeaderProps) {
     return (
-        <div className="mb-10 select-none group relative">
+        <div className="mb-10 select-none group relative max-xl:pt-7">
             <div className="flex items-start gap-4">
                 {/* Decorative left accent line that pops on hover */}
                 <div
@@ -16,7 +16,7 @@ export default function LogHeader({ title, subtitle }: LogHeaderProps) {
                 />
 
                 <div className="space-y-2 flex-1">
-                    <h1 className="text-3xl md:text-4xl font-bold dark:text-zinc-50 text-zinc-900 transition-colors duration-300">
+                    <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold dark:text-zinc-50 text-zinc-900 transition-colors duration-300">
                         {title}
                     </h1>
 

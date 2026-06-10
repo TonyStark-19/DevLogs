@@ -1,5 +1,5 @@
 // import react and hooks
-import React, { useState, useMemo, useEffect } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 
 // import routing tools
 import { useNavigate, useLocation } from 'react-router-dom';
@@ -14,6 +14,12 @@ export interface LogItem {
     id: string;
     title: string;
     path: string;
+}
+
+// sidebar props
+export interface SidebarProps {
+    isOpen?: boolean;
+    onClose?: () => void;
 }
 
 // log page data
@@ -51,17 +57,24 @@ const rawLogs: LogItem[] = [
 ];
 
 // Sidebar component definition
-export const Sidebar: React.FC = () => {
+export default function Sidebar({ isOpen = false, onClose }: SidebarProps) {
     const [searchQuery, setSearchQuery] = useState('');
 
     // Lazy initializing state from localStorage so it persists on page reloads
     const [isDarkMode, setIsDarkMode] = useState<boolean>(() => {
         const savedTheme = localStorage.getItem('theme');
-        return savedTheme ? savedTheme === 'dark' : true; // default to dark mode
+        return savedTheme ? savedTheme === 'dark' : true;
     });
 
     const navigate = useNavigate();
     const location = useLocation();
+
+    // Auto-collapse sidebar on mobile screen configurations once a path route executes
+    useEffect(() => {
+        if (onClose) {
+            onClose();
+        }
+    }, [location.pathname]);
 
     // Sync theme adjustments with both DOM token classes and localStorage caches
     useEffect(() => {
@@ -74,6 +87,7 @@ export const Sidebar: React.FC = () => {
         }
     }, [isDarkMode]);
 
+    // filter search
     const sortedAndFilteredLogs = useMemo(() => {
         return rawLogs
             .filter((log) => log.title.toLowerCase().includes(searchQuery.toLowerCase()))
@@ -86,8 +100,14 @@ export const Sidebar: React.FC = () => {
 
     return (
         <aside
-            className="w-80 h-screen flex flex-col relative overflow-hidden border-r transition-colors duration-300 dark:bg-zinc-950 dark:border-zinc-900 
-            dark:text-zinc-100 bg-zinc-50 border-zinc-200 text-zinc-900"
+            className={`fixed top-14 left-0 z-40 w-full h-[calc(100vh-3.5rem)] flex flex-col overflow-hidden transition-transform duration-300 ease-in-out
+            dark:bg-zinc-950 bg-zinc-50
+
+            ${isOpen
+                    ? "translate-x-0"
+                    : "-translate-x-full"
+                }
+            xl:relative xl:top-0 xl:left-0 xl:z-auto xl:w-80 xl:h-screen xl:translate-x-0 xl:border-r xl:dark:border-zinc-900 xl:border-zinc-200`}
         >
             {/* Background Dot Layer Grid */}
             <div

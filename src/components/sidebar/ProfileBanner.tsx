@@ -17,7 +17,7 @@ export default function ProfileBanner({ setIsDarkMode, isDarkMode }: ProfileBann
             <img
                 src="/images/profile.jpg"
                 alt="Aditya Chandel"
-                className="absolute inset-0 w-full h-full object-cover z-0 grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all 
+                className="absolute inset-0 w-full h-full object-cover z-0 sm:grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all 
                 duration-700 ease-out"
             />
 

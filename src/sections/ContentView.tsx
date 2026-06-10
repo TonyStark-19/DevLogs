@@ -19,22 +19,26 @@ export interface InternalMention {
 // content view props
 interface ContentViewProps {
     children: React.ReactNode;
+    isLinksOpen: boolean;
+    setIsLinksOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 // streak start data constant
 const STREAK_START = Date.UTC(2024, 6, 9); // July 9, 2024
 
 // content view component
-export const ContentView: React.FC<ContentViewProps> = ({ children }) => {
+export default function ContentView({ children, isLinksOpen, setIsLinksOpen }: ContentViewProps) {
     const [internalLinks, setInternalLinks] = useState<InternalMention[]>([]);
     const location = useLocation();
     const daysStreak = useDaysStreak(STREAK_START);
 
     const hasMentions = internalLinks.length > 0;
 
+    // extract log links
     useEffect(() => {
+        setIsLinksOpen(false);
+
         const timer = setTimeout(() => {
-            /* SCRAPE LOG LINKS MENTIONED IN ACTIVE PAGE CONTENT */
             const contentLinks = document.querySelectorAll('article a[href^="/"]');
             const extractedMentions: InternalMention[] = [];
             const trackingSet = new Set<string>();
@@ -51,6 +55,7 @@ export const ContentView: React.FC<ContentViewProps> = ({ children }) => {
                     });
                 }
             });
+
             setInternalLinks(extractedMentions);
         }, 100);
 
@@ -74,13 +79,16 @@ export const ContentView: React.FC<ContentViewProps> = ({ children }) => {
             <ScrollToTop />
 
             {/* Dynamic Background Grid Layer */}
-            <div className="absolute inset-0 opacity-[0.015] dark:opacity-[0.025] pointer-events-none bg-[radial-gradient(#fff_1px,transparent_1px)] bg-size-[24px_24px]"></div>
+            <div
+                className="absolute inset-0 opacity-[0.015] dark:opacity-[0.025] pointer-events-none bg-[radial-gradient(#fff_1px,transparent_1px)] 
+                bg-size-[24px_24px]"
+            ></div>
 
             {/* Middle Workspace Layout */}
             <main
                 id="main-scroll-wrapper"
                 className="flex-1 overflow-y-auto px-1 flex flex-col min-h-full relative z-10 scrollbar-thin 
-                dark:scrollbar-thumb-zinc-900 scrollbar-thumb-zinc-200 scroll-smooth"
+                dark:scrollbar-thumb-zinc-900 scrollbar-thumb-zinc-200 scroll-smooth max-xl:justify-start"
             >
                 {/* Core Content Box */}
                 <div
@@ -98,7 +106,16 @@ export const ContentView: React.FC<ContentViewProps> = ({ children }) => {
 
             {/* Right Sidebar Section */}
             {hasMentions && (
-                <RightSidebar internalLinks={internalLinks} />
+                <div
+                    className={`fixed xl:relative top-14 xl:top-0 right-0 h-[calc(100vh-3.5rem)] xl:h-auto z-40 transition-transform duration-300 ease-in-out
+                    ${isLinksOpen
+                            ? "translate-x-0"
+                            : "translate-x-full xl:translate-x-0"
+                        }
+                    `}
+                >
+                    <RightSidebar internalLinks={internalLinks} />
+                </div>
             )}
         </div>
     );
