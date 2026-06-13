@@ -21,7 +21,7 @@ export default function TimeManagement() {
                 <p>
                     Time management is an essential <LogLink to="/skills">skill</LogLink> that plays a vital role in
                     achieving success, especially when embarking on a new endeavor or working on a long-term{' '}
-                    <LogLink to="/project-building">project.</LogLink>
+                    <LogLink to="/project-building">project</LogLink>.
                 </p>
 
                 <ul className="list-disc pl-5 space-y-2 text-zinc-600 dark:text-zinc-400">
@@ -90,11 +90,12 @@ export default function TimeManagement() {
                     <div className="space-y-2">
                         <p className="font-medium">"Studies show that people who plan their days are 20-25% more productive."</p>
                         <p>“Take five minutes now to plan your next 24 hours. Note down your priorities!”</p>
+                        
                         <p className="text-sm text-zinc-500 dark:text-zinc-400">
                             And if you're wondering how to start? Read{' '}
                             <LogLink to="/how-to-start">
-                                this page.
-                            </LogLink>
+                                this page
+                            </LogLink>.
                         </p>
                     </div>
                 }

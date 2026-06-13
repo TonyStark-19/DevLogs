@@ -2,6 +2,7 @@
 import LogHeader from '../../components/sub-pages/LogHeader';
 import LogFooter from '../../components/sub-pages/LogFooter';
 import LogLink from '../../components/sub-pages/LogLink.tsx';
+import { SpotifyLink } from '../../components/sub-pages/SocialLinks.tsx';
 
 // music page component
 export default function Music() {
@@ -20,7 +21,7 @@ export default function Music() {
             <div className="mt-8 space-y-6 dark:text-zinc-300 text-zinc-700 text-[15px] leading-relaxed antialiased">
                 <p>
                     Music is not just a form of entertainment; it is a powerful tool that influences
-                    emotions, enhances focus, and improves <LogLink to="/mental-health">mental well-being.</LogLink>
+                    emotions, enhances focus, and improves <LogLink to="/mental-health">mental well-being</LogLink>.
                 </p>
 
                 <ul className="list-disc pl-5 space-y-2 text-zinc-600 dark:text-zinc-400">
@@ -41,14 +42,14 @@ export default function Music() {
 
                 <p>
                     During long coding sessions, which often last for hours, music acts as a driving force,
-                    keeping me engaged and preventing <LogLink to="/burnout">burnout.</LogLink>
+                    keeping me engaged and preventing <LogLink to="/burnout">burnout</LogLink>.
                 </p>
 
                 <ul className="list-disc pl-5 space-y-2 text-zinc-600 dark:text-zinc-400">
                     <li>
                         It sets a rhythm that aligns with my workflow, allowing me to code with passion and{' '}
-                        <LogLink to="/consistency">consistency.</LogLink> Working on projects while listening to music
-                        creates an immersive experience, helping me stay focused and <LogLink to="/productivity">productive.</LogLink>
+                        <LogLink to="/consistency">consistency</LogLink>. Working on <LogLink to="/project-building">projects</LogLink> while listening to music
+                        creates an immersive experience, helping me stay focused and <LogLink to="/productivity">productive</LogLink>.
                     </li>
                     <li>
                         However, <LogLink to="/problem-solving">when solving DSA problems</LogLink> or learning new
@@ -67,25 +68,8 @@ export default function Music() {
                         music enhances creativity and productivity.
                     </li>
                     <li>
-                        Platforms like{' '}
-                        <a
-                            href="https://open.spotify.com/user/3144dse2ga5ij26naaky2x3xml7a?si=52e8ae4e5ea74526"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="font-medium text-zinc-900 dark:text-zinc-100 hover:underline underline-offset-4 decoration-zinc-400"
-                        >
-                            Spotify
-                        </a>{' '}
-                        make it easy to explore new genres, discover inspiring tracks, and curate playlists that suit different moods and activities. 
-                        You can check out what I’m tracking through my active updates directly on my{' '}
-                        <a
-                            href="https://open.spotify.com/user/3144dse2ga5ij26naaky2x3xml7a?si=52e8ae4e5ea74526"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="font-medium text-zinc-900 dark:text-zinc-100 hover:underline underline-offset-4 decoration-zinc-400"
-                        >
-                            Spotify Profile
-                        </a>.
+                        Platforms like Spotify make it easy to explore new genres, discover inspiring tracks, and curate playlists that suit different moods and 
+                        activities. You can check out what I'm tracking through my active updates directly on my <SpotifyLink />.
                     </li>
                 </ul>
 

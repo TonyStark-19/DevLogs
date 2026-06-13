@@ -2,6 +2,11 @@
 import LogHeader from '../../components/sub-pages/LogHeader';
 import LogFooter from '../../components/sub-pages/LogFooter';
 import LogLink from '../../components/sub-pages/LogLink.tsx';
+import { Hacktoberfest } from '../../components/sub-pages/ExternalLinks.tsx';
+import { OSCG } from '../../components/sub-pages/ExternalLinks.tsx';
+import { GSSOC } from '../../components/sub-pages/ExternalLinks.tsx';
+import { GSOC } from '../../components/sub-pages/ExternalLinks.tsx';
+import { GitHubLink } from '../../components/sub-pages/SocialLinks.tsx';
 
 // open source page component
 export default function OpenSource() {
@@ -27,14 +32,14 @@ export default function OpenSource() {
                     <li>
                         They allow developers to sharpen their <LogLink to="/skills">skills</LogLink>, work on real-world{' '}
                         <LogLink to="/project-building">projects</LogLink>, and gain practical experience in coding,
-                        debugging, and <LogLink to="/problem-solving">problem-solving.</LogLink>
+                        debugging, and <LogLink to="/problem-solving">problem-solving</LogLink>.
                     </li>
                     <li>
                         By contributing to open-source projects, developers get exposure to diverse codebases,
                         which helps them understand different coding styles, architectures, and best practices.
                     </li>
                     <li>
-                        To share a breakdown of my own open-source path: I am a proud 2X Hacktoberfest contributor spanning the 2024 and 2025
+                        To share a breakdown of my own open-source path: I am a proud 2X <Hacktoberfest /> contributor spanning the 2024 and 2025
                         seasonal blocks, and I am actively eyeing this upcoming year's milestone to extend that track record.
                     </li>
                 </ul>
@@ -51,49 +56,19 @@ export default function OpenSource() {
                         each other's work, and improve software collectively.
                     </li>
                     <li>
-                        This year, I scaled my engagement via Open Source Connect Global, climbing to a rank among the top 20 contributors out of more
+                        This year, I scaled my engagement via <OSCG />, climbing to a rank among the top 20 contributors out of more
                         than 4,000 global participants. That momentum pushed me straight into structural project shipping.
                     </li>
                 </ul>
 
                 <p>
-                    Additionally, open-source contributions are highly beneficial for a developer’s resume,
+                    Additionally, open-source contributions are highly beneficial for a developer's resume,
                     as they demonstrate hands-on experience, technical proficiency, and the ability to work in teams.
                 </p>
 
                 <ul className="list-disc pl-5 space-y-2 text-zinc-600 dark:text-zinc-400">
                     <li>
-                        Participating in open-source programs like{' '}
-                        <a
-                            href="https://hacktoberfest.com/"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="font-medium text-zinc-900 dark:text-zinc-100 hover:underline underline-offset-4 decoration-zinc-400"
-                        >
-                            Hacktoberfest
-                        </a>
-                        ,{' '}
-                        <a
-                            href="https://gssoc.girlscript.tech/"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="font-medium text-zinc-900 dark:text-zinc-100 hover:underline underline-offset-4 decoration-zinc-400"
-                        >
-                            GirlScript Summer of Code
-                        </a>
-                        ,{' '}
-                        <a
-                            href="https://summerofcode.withgoogle.com/"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="font-medium text-zinc-900 dark:text-zinc-100 hover:underline underline-offset-4 decoration-zinc-400"
-                        >
-                            Google Summer of Code (GSoC)
-                        </a>
-                        , and{' '}
-                        <LogLink to="/open-source">
-                            Outreachy
-                        </LogLink>{' '}
+                        Participating in open-source programs like <Hacktoberfest />, <GSSOC />, and <GSOC />{" "}
                         can provide structured mentorship, <LogLink to="/networking">networking</LogLink> opportunities, and even job prospects.
                     </li>
                     <li>
@@ -129,17 +104,7 @@ export default function OpenSource() {
             <LogFooter
                 text={
                     <p>
-                        "Start contributing today! Check out some open-source projects on{' '}
-                        <a
-                            target="_blank"
-                            href="https://github.com"
-                            rel="noreferrer"
-                            className="underline underline-offset-4 decoration-zinc-400 hover:text-zinc-950 
-                            dark:hover:text-zinc-50 transition-colors font-medium"
-                        >
-                            GitHub
-                        </a>{' '}
-                        and begin your journey."
+                        "Start contributing today! Check out some open-source projects on my <GitHubLink /> and begin your journey."
                     </p>
                 }
             />

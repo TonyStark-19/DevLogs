@@ -2,6 +2,10 @@
 import LogHeader from '../../components/sub-pages/LogHeader';
 import LogFooter from '../../components/sub-pages/LogFooter';
 import LogLink from '../../components/sub-pages/LogLink.tsx';
+import { LeetCodeLink } from '../../components/sub-pages/SocialLinks.tsx';
+import { HackerRankLink } from '../../components/sub-pages/SocialLinks.tsx';
+import { CodeforcesLink } from '../../components/sub-pages/SocialLinks.tsx';
+import { DSAPlaylist } from '../../components/sub-pages/ExternalLinks.tsx';
 
 // problem solving page component
 export default function ProblemSolving() {
@@ -57,34 +61,7 @@ export default function ProblemSolving() {
 
                 <p>
                     To develop strong problem-solving skills, <LogLink to="/consistency">consistency</LogLink> is key.
-                    Platforms like{' '}
-                    <a
-                        href="https://leetcode.com/"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="font-medium text-zinc-900 dark:text-zinc-100 hover:underline underline-offset-4 decoration-zinc-400"
-                    >
-                        LeetCode
-                    </a>
-                    ,{' '}
-                    <a
-                        href="https://www.hackerrank.com/"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="font-medium text-zinc-900 dark:text-zinc-100 hover:underline underline-offset-4 decoration-zinc-400"
-                    >
-                        HackerRank
-                    </a>
-                    , and{' '}
-                    <a
-                        href="https://codeforces.com/"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="font-medium text-zinc-900 dark:text-zinc-100 hover:underline underline-offset-4 decoration-zinc-400"
-                    >
-                        Codeforces
-                    </a>{' '}
-                    provide a structured way to practice.
+                    Platforms like <LeetCodeLink />, <HackerRankLink />, and <CodeforcesLink /> provide a structured way to practice.
                 </p>
 
                 <ul className="list-disc pl-5 space-y-2 text-zinc-600 dark:text-zinc-400">
@@ -126,23 +103,15 @@ export default function ProblemSolving() {
                 </p>
 
                 <p className="border-l-2 border-zinc-300 dark:border-zinc-800 pl-4 italic text-zinc-500 dark:text-zinc-400">
-                    Here is the{' '}
-                    <a
-                        href="https://www.youtube.com/playlist?list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="font-medium text-zinc-900 dark:text-zinc-100 hover:underline underline-offset-4 decoration-zinc-400 non-italic"
-                    >
-                        Apna College DSA Series Playlist
-                    </a>{' '}
-                    which I am following as part of my DSA journey. I highly recommend this channel for everything from learning DSA to Web Development.
+                    Here is the <DSAPlaylist /> which I am following as part of my DSA journey. I highly recommend this channel for everything from 
+                    learning DSA to Web Development.
                 </p>
             </div>
 
             {/* Footer */}
             <LogFooter
                 text={
-                    <p>
+                    <p className='leading-7'>
                         "Bill Gates once said, 'I choose a lazy person to do a hard job because they will find an easy
                         way to do it.' This reflects the power of creative problem-solving in programming."
                     </p>

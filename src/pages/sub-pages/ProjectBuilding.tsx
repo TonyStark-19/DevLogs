@@ -2,6 +2,9 @@
 import LogHeader from '../../components/sub-pages/LogHeader';
 import LogFooter from '../../components/sub-pages/LogFooter';
 import LogLink from '../../components/sub-pages/LogLink.tsx';
+import { Portfolio } from '../../components/sub-pages/ExternalLinks.tsx';
+import { GitHubLink } from '../../components/sub-pages/SocialLinks.tsx';
+import { HtmlCssWebiste } from '../../components/sub-pages/ExternalLinks.tsx';
 
 // project building page component
 export default function ProjectBuilding() {
@@ -70,24 +73,7 @@ export default function ProjectBuilding() {
                     </li>
                     <li>
                         I fully intend to continue building and launching more unique ideas along my journey. You can track my live setups
-                        and explore the systems I design directly on my{" "}
-                        <a
-                            href="https://aditya-devfolio-one.vercel.app"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="font-medium text-zinc-900 dark:text-zinc-100 hover:underline underline-offset-4 decoration-zinc-400"
-                        >
-                            Portfolio Website
-                        </a> or inspect the code repositories over on my{" "}
-
-                        <a
-                            href="https://github.com/TonyStark-19"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="font-medium text-zinc-900 dark:text-zinc-100 hover:underline underline-offset-4 decoration-zinc-400"
-                        >
-                            GitHub Profile
-                        </a>.
+                        and explore the systems I design directly on my <Portfolio /> or inspect the code repositories over on my <GitHubLink /> Profile.
                     </li>
                 </ul>
 
@@ -114,18 +100,9 @@ export default function ProjectBuilding() {
             <LogFooter
                 text={
                     <div className="space-y-2">
-                        <p>
-                            “Ready to start your first project? <br /> <br />Check out{' '}
-                            <a
-                                target="_blank"
-                                href="https://html-css-projects-phi.vercel.app/"
-                                rel="noreferrer"
-                                className="underline underline-offset-4 decoration-zinc-400 hover:text-zinc-950 dark:hover:text-zinc-50 
-                                transition-colors font-medium"
-                            >
-                                My HTML-CSS Mini Projects Website. <br /><br />
-                            </a>
-                            ” This website is filled with numerous HTML-CSS mini projects to begin your web dev journey.
+                        <p className='leading-7'>
+                            “Ready to start your first project? <br /> Check out my <HtmlCssWebiste /> Website.” <br /> This website is filled with numerous
+                            HTML-CSS mini projects to begin your web dev journey.
                         </p>
                         <p className="text-xs text-zinc-400 dark:text-zinc-500 italic">
                             You can star it if you find it useful!

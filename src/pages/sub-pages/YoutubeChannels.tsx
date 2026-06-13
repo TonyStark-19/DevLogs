@@ -2,13 +2,16 @@
 import LogHeader from '../../components/sub-pages/LogHeader';
 import LogFooter from '../../components/sub-pages/LogFooter';
 import LogLink from '../../components/sub-pages/LogLink.tsx';
+import { ApnaCollege } from '../../components/sub-pages/ExternalLinks.tsx';
+import { BeerBiceps } from '../../components/sub-pages/ExternalLinks.tsx';
+import { TwitterLink } from '../../components/sub-pages/SocialLinks.tsx';
 
 // youtube channels page component
 export default function YoutubeChannels() {
     return (
-        <article 
-        className="max-w-3xl mx-auto px-2 py-5" 
-        id="YoutubeChannels"
+        <article
+            className="max-w-3xl mx-auto px-2 py-5"
+            id="YoutubeChannels"
         >
             {/* Header */}
             <LogHeader
@@ -21,7 +24,7 @@ export default function YoutubeChannels() {
                 <p>
                     YouTube channels are a transformative resource in today's digital age, offering a wealth
                     of information and opportunities for <LogLink to="/skills">skill</LogLink> development to anyone
-                    willing to invest their time and <LogLink to="/dedication">dedication.</LogLink>
+                    willing to invest their time and <LogLink to="/dedication">dedication</LogLink>.
                 </p>
 
                 <ul className="list-disc pl-5 space-y-2 text-zinc-600 dark:text-zinc-400">
@@ -47,7 +50,7 @@ export default function YoutubeChannels() {
                     <li>
                         The only prerequisite is having the <LogLink to="/discipline">discipline</LogLink> and{' '}
                         <LogLink to="/mindset">mindset</LogLink> to <LogLink to="/how-to-start">start</LogLink> learning and apply
-                        that knowledge <LogLink to="/consistency">consistently.</LogLink>
+                        that knowledge <LogLink to="/consistency">consistently</LogLink>.
                     </li>
                     <li>
                         With YouTube, the barriers to learning are reduced significantly, empowering individuals
@@ -60,37 +63,10 @@ export default function YoutubeChannels() {
 
                 <ul className="list-disc pl-5 space-y-3 text-zinc-600 dark:text-zinc-400">
                     <li>
-                        <a
-                            href="https://www.youtube.com/@ApnaCollegeOfficial"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="font-medium text-zinc-900 dark:text-zinc-100 hover:underline underline-offset-4 decoration-zinc-400"
-                        >
-                            Apna College
-                        </a>
-                        {' '}— A great channel for beginners to advanced learners focusing on coding, Data Structures, and Development.
+                        <ApnaCollege /> — A great channel for beginners to advanced learners focusing on coding, Data Structures, and Development.
                     </li>
                     <li>
-                        <a
-                            href="https://www.youtube.com/@AmanDhattarwal"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="font-medium text-zinc-900 dark:text-zinc-100 hover:underline underline-offset-4 decoration-zinc-400"
-                        >
-                            Aman Dhattarwal
-                        </a>
-                        {' '}— Covers tech updates, career guidance, and motivational content.
-                    </li>
-                    <li>
-                        <a
-                            href="https://www.youtube.com/@beerbiceps"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="font-medium text-zinc-900 dark:text-zinc-100 hover:underline underline-offset-4 decoration-zinc-400"
-                        >
-                            BeerBiceps
-                        </a>
-                        {' '}— Offers engaging <LogLink to="/podcast">podcasts</LogLink> with thought leaders, life lessons, and self-improvement advice.
+                        <BeerBiceps /> — Offers engaging <LogLink to="/podcast">podcasts</LogLink> with thought leaders, life lessons, and self-improvement advice.
                     </li>
                 </ul>
             </div>
@@ -99,16 +75,7 @@ export default function YoutubeChannels() {
             <LogFooter
                 text={
                     <p className='leading-8'>
-                        "Have a favorite YouTube channel which has helped you in your journey? <br /> You can share your recommendations in my{' '}
-                        <a
-                            target="_blank"
-                            href="https://twitter.com/iamaditya_3"
-                            rel="noreferrer"
-                            className="underline underline-offset-4 decoration-zinc-400 hover:text-zinc-950 dark:hover:text-zinc-50 transition-colors"
-                        >
-                            Twitter
-                        </a>
-                        "
+                        "Have a favorite YouTube channel which has helped you in your journey? <br /> You can share your recommendations in my <TwitterLink />"
                     </p>
                 }
             />

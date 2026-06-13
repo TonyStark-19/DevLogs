@@ -77,14 +77,14 @@ export default function SoftSkills() {
                     Lastly, <LogLink to="/time-management">time management</LogLink> and{' '}
                     <LogLink to="/discipline">discipline</LogLink> are essential soft skills for developers.
                     Balancing multiple tasks, meeting deadlines, and prioritizing work efficiently can make
-                    a significant difference in <LogLink to="/productivity">productivity.</LogLink>
+                    a significant difference in <LogLink to="/productivity">productivity</LogLink>.
                 </p>
 
                 <ul className="list-disc pl-5 space-y-2 text-zinc-600 dark:text-zinc-400">
                     <li>
                         Developers must also manage their learning curve while handling daily responsibilities.
                         Setting realistic goals, avoiding <LogLink to="/burnout">burnout</LogLink>, and maintaining a
-                        healthy work-life balance contribute to sustained performance and <LogLink to="/growth">growth.</LogLink>
+                        healthy work-life balance contribute to sustained performance and <LogLink to="/growth">growth</LogLink>.
                     </li>
                 </ul>
 

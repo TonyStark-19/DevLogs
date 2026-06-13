@@ -49,7 +49,7 @@ export default function Curiosity() {
                         Whether it’s reading documentation, watching tutorials, or diving into{' '}
                         <LogLink to="/open-source">open-source</LogLink>{' '}
                         <LogLink to="/project-building">projects</LogLink>, curious individuals take proactive steps to
-                        expand their <LogLink to="/skills">skill set.</LogLink>
+                        expand their <LogLink to="/skills">skill set</LogLink>.
                     </li>
                     <li>
                         Instead of fearing challenges, they view them as opportunities to <LogLink to="/growth">grow</LogLink>,

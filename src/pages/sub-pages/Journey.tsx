@@ -20,7 +20,7 @@ export default function Journey() {
             <div className="mt-8 space-y-6 dark:text-zinc-300 text-zinc-700 text-[15px] leading-relaxed antialiased">
                 <p>
                     The journey of becoming a great developer is not just about writing code; it's about
-                    resilience, patience, and continuous <LogLink to="/growth">growth.</LogLink>
+                    resilience, patience, and continuous <LogLink to="/growth">growth</LogLink>.
                 </p>
 
                 <ul className="list-disc pl-5 space-y-2 text-zinc-600 dark:text-zinc-400">
@@ -71,8 +71,8 @@ export default function Journey() {
                 </ul>
 
                 <p className="border-l-2 border-zinc-300 dark:border-zinc-800 pl-4 italic text-zinc-500 dark:text-zinc-400">
-                    Stay committed, push through self-doubt, and embrace the process. Keep refining your
-                    skills, keep sharing your progress, and keep building. With persistence, consistency,
+                    Stay committed, push through self-doubt, and embrace the process. Keep refining your{" "}
+                    <LogLink to="/skills">skills</LogLink>, keep sharing your progress, and keep building. With persistence, consistency,
                     and belief in yourself, you won't just be a developer—you'll be a great one, capable of
                     making a real impact in the tech world.
                 </p>

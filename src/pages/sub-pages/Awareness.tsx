@@ -3,6 +3,7 @@ import LogHeader from '../../components/sub-pages/LogHeader';
 import LogFooter from '../../components/sub-pages/LogFooter';
 import LogLink from '../../components/sub-pages/LogLink.tsx';
 import SocialLinks from '../../components/sub-pages/SocialLinks.tsx';
+import { LinkedInLink } from '../../components/sub-pages/SocialLinks.tsx';
 
 // awareness page component
 export default function Awareness() {
@@ -26,8 +27,8 @@ export default function Awareness() {
 
                 <ul className="list-disc pl-5 space-y-2 text-zinc-600 dark:text-zinc-400">
                     <li>
-                        It is not just about knowing something exists—it is about understanding the level of
-                        competition, the opportunities available, and the steps you need to take to stay ahead.
+                        It is not just about knowing something exists—it is about understanding the level of{" "}
+                        <LogLink to="/competition">competition</LogLink>, the opportunities available, and the steps you need to take to stay ahead.
                     </li>
                     <li>
                         The earlier you develop this awareness, the better equipped you are to make informed
@@ -69,7 +70,7 @@ export default function Awareness() {
                         and contributing to open-source can serve as both motivation and a wake-up call to take your own journey more seriously.
                     </li>
                     <li>
-                        And for me, I got the awareness of coding via LinkedIn and started learning coding extensively in my college's first year.
+                        And for me, I got the awareness of coding via <LinkedInLink /> and started learning coding extensively in my college's first year.
                     </li>
                 </ul>
 

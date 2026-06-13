@@ -19,14 +19,14 @@ export default function Dedication() {
             {/* Body Content Stream */}
             <div className="mt-8 space-y-6 dark:text-zinc-300 text-zinc-700 text-[15px] leading-relaxed antialiased">
                 <p>
-                    Dedication is the cornerstone of success in any area of life. It’s the ability to commit
+                    Dedication is the cornerstone of success in any area of life. It's the ability to commit
                     yourself fully to a task, <LogLink to="/project-building">project</LogLink>, or goal and stick
                     with it, even when faced with challenges or distractions.
                 </p>
 
                 <ul className="list-disc pl-5 space-y-2 text-zinc-600 dark:text-zinc-400">
                     <li>
-                        Dedication goes beyond interest or motivation—it’s about <LogLink to="/discipline">discipline</LogLink> and
+                        Dedication goes beyond interest or motivation—it's about <LogLink to="/discipline">discipline</LogLink> and
                         perseverance. It means showing up <LogLink to="/consistency">consistently</LogLink>, putting in the effort, and
                         focusing on progress, no matter how small, every single day.
                     </li>
@@ -43,7 +43,7 @@ export default function Dedication() {
                 <ul className="list-disc pl-5 space-y-2 text-zinc-600 dark:text-zinc-400">
                     <li>
                         When you commit time and energy to learning a <LogLink to="/skills">new skill</LogLink>, working
-                        on a project, or improving yourself, the consistent effort leads to tangible <LogLink to="/growth">growth.</LogLink>
+                        on a project, or improving yourself, the consistent effort leads to tangible <LogLink to="/growth">growth</LogLink>.
                     </li>
                     <li>
                         This steady progress not only increases your confidence but also fuels your passion for

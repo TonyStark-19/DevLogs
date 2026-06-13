@@ -2,6 +2,8 @@
 import LogHeader from '../../components/sub-pages/LogHeader';
 import LogFooter from '../../components/sub-pages/LogFooter';
 import LogLink from '../../components/sub-pages/LogLink.tsx';
+import { LinkedInLink } from '../../components/sub-pages/SocialLinks.tsx';
+import { ApnaCollege } from '../../components/sub-pages/ExternalLinks.tsx';
 
 // how to start page component
 export default function HowToStart() {
@@ -52,15 +54,7 @@ export default function HowToStart() {
                     </li>
                     <li>
                         My own journey started exactly like this in my first year of college when the C language was first
-                        introduced. Driven by pure curiosity, I started learning C extensively through the <a
-                            href="https://www.youtube.com/@ApnaCollegeOfficial"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="font-medium text-zinc-900 dark:text-zinc-100 hover:underline 
-                            underline-offset-4 decoration-zinc-400"
-                        >
-                            Apna College
-                        </a> YouTube
+                        introduced. Driven by pure curiosity, I started learning C extensively through the <ApnaCollege /> YouTube
                         channel and ended up building 79 separate programs entirely on my own.
                     </li>
                     <li>
@@ -79,17 +73,17 @@ export default function HowToStart() {
                         progress and builds momentum.
                     </li>
                     <li>
-                        I officially started documenting and sharing my engineering progress publicly on LinkedIn on July 9,
+                        I officially started documenting and sharing my engineering progress publicly on <LinkedInLink /> on July 9,
 
                         2024. Just the day before, I had received my laptop and taken a strict oath to show up every single
-                        day—and that consistency has remained a permanent part of my life ever since.
+                        day—and that <LogLink to="/consistency">consistency</LogLink> has remained a permanent part of my life ever since.
                     </li>
                     <li>
                         As you continue, you'll not only learn and <LogLink to="/growth">grow</LogLink>, but you'll also
                         develop resilience, <LogLink to="/discipline">discipline</LogLink>, and confidence.
                     </li>
                     <li>
-                        The journey of starting is less about perfection and more about persistence, and before
+                        The <LogLink to="/journey">journey</LogLink> of starting is less about perfection and more about persistence, and before
                         you know it, you'll look back and see how far you've come.
                     </li>
                 </ul>

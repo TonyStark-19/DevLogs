@@ -22,23 +22,21 @@ export default function Networking() {
                 <p>
                     Networking is an essential component for <LogLink to="/growth">career growth</LogLink>,
                     particularly in fields like tech. It allows you to connect with like-minded individuals
-                    who share similar goals, ideas, and <LogLink to="/skills">skills.</LogLink>
+                    who share similar goals, ideas, and <LogLink to="/skills">skills</LogLink>.
                 </p>
 
                 <ul className="list-disc pl-5 space-y-2 text-zinc-600 dark:text-zinc-400">
                     <li>
                         Through networking, you can collaborate on <LogLink to="/project-building">projects</LogLink>,
                         exchange knowledge, and gain valuable insights from others who are on a similar{' '}
-                        <LogLink to="/my-journey">journey.</LogLink>
+                        <LogLink to="/my-journey">journey</LogLink>.
                     </li>
                     <li>
                         When you consciously surround yourself with consistent, driven people, it completely accelerates your own trajectory. The
                         highest forms of growth invariably happen when you position yourself around the right execution-minded ecosystem.
                     </li>
                     <li>
-                        Platforms like{' '}
-                        <SocialLinks />{' '}
-                        are powerful tools for this, enabling you to showcase your progress, share your work,
+                        Platforms like <SocialLinks /> are powerful tools for this, enabling you to showcase your progress, share your work,
                         and engage with a community of professionals who can help you grow.
                     </li>
                 </ul>
@@ -97,25 +95,7 @@ export default function Networking() {
                     <div className="space-y-2">
                         <p className="font-medium">"Your network is your net worth." – Porter Gale</p>
                         <p>
-                            “Start building your network today! Connect with me on{' '}
-                            <a
-                                target="_blank"
-                                href="https://linkedin.com/in/aditya-chandel-223bb3308"
-                                rel="noreferrer"
-                                className="underline underline-offset-4 decoration-zinc-400 hover:text-zinc-950 dark:hover:text-zinc-50 transition-colors"
-                            >
-                                LinkedIn
-                            </a>{' '}
-                            or{' '}
-                            <a
-                                target="_blank"
-                                href="https://twitter.com/iamaditya_3"
-                                rel="noreferrer"
-                                className="underline underline-offset-4 decoration-zinc-400 hover:text-zinc-950 dark:hover:text-zinc-50 transition-colors"
-                            >
-                                Twitter
-                            </a>
-                            , and let's learn and grow together.”
+                            “Start building your network today! Connect with me on <SocialLinks />, and let's learn and grow together.”
                         </p>
                     </div>
                 }

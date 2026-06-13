@@ -27,7 +27,7 @@ export default function PhysicalHealth() {
                 <ul className="list-disc pl-5 space-y-2 text-zinc-600 dark:text-zinc-400">
                     <li>
                         Your body is the foundation that supports everything you do, and taking care of it
-                        ensures long-term success and <LogLink to="/productivity">productivity.</LogLink> A healthy body
+                        ensures long-term success and <LogLink to="/productivity">productivity</LogLink>. A healthy body
                         enhances focus, energy levels, and mental clarity, allowing you to perform better in every area of life.
                     </li>
                     <li>
@@ -48,7 +48,7 @@ export default function PhysicalHealth() {
                         gym, running, cycling, yoga, or even simple activities like stretching and walking.
                     </li>
                     <li>
-                        The key is <LogLink to="/consistency">consistency;</LogLink> even a short workout each day can
+                        The key is <LogLink to="/consistency">consistency</LogLink>; even a short workout each day can
                         have a significant impact over time. The more you integrate movement into your daily life,
                         the stronger and more resilient your body becomes.
                     </li>

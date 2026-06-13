@@ -27,7 +27,7 @@ export default function Discipline() {
                 <ul className="list-disc pl-5 space-y-2 text-zinc-600 dark:text-zinc-400">
                     <li>
                         For developers, maintaining discipline means adhering to deadlines, following coding
-                        standards, and consistently putting in the effort to improve their <LogLink to="/skills">skills.</LogLink>
+                        standards, and consistently putting in the effort to improve their <LogLink to="/skills">skills</LogLink>.
                     </li>
                     <li>
                         It requires a strong sense of responsibility, not only to complete tasks but to ensure
@@ -37,7 +37,7 @@ export default function Discipline() {
                 </ul>
 
                 <p>
-                    For a developer, discipline is essential when managing time and priorities. With complex{' '}
+                    For a developer, discipline is essential when <LogLink to="/time-management">managing time</LogLink> and priorities. With complex{' '}
                     <LogLink to="/project-building">projects</LogLink>, multiple tasks, and deadlines to meet,
                     developers must be able to plan their work efficiently.
                 </p>
@@ -48,7 +48,7 @@ export default function Discipline() {
                         management allows developers to meet project requirements and deadlines without feeling overwhelmed.
                     </li>
                     <li>
-                        By staying disciplined in organizing their tasks and avoiding procrastination,
+                        By staying disciplined in organizing their tasks and avoiding <LogLink to="/procastination">procastination</LogLink>,
                         developers can work with greater <LogLink to="/productivity">productivity</LogLink> and focus,
                         leading to higher-quality results.
                     </li>
@@ -66,20 +66,20 @@ export default function Discipline() {
                         can steadily grow their knowledge base.
                     </li>
                     <li>
-                        Whether it’s consistently working on coding challenges, reading documentation, or
+                        Whether it's consistently working on coding challenges, reading documentation, or
                         experimenting with new technologies, disciplined learning ensures long-term improvement
                         and mastery of new concepts.
                     </li>
                 </ul>
 
                 <p>
-                    Lastly, discipline helps developers handle setbacks and maintain resilience. The journey
+                    Lastly, discipline helps developers handle setbacks and maintain resilience. The <LogLink to="/journey">journey</LogLink>{" "}
                     of coding is often filled with bugs, errors, and moments of frustration.
                 </p>
 
                 <ul className="list-disc pl-5 space-y-2 text-zinc-600 dark:text-zinc-400">
                     <li>
-                        However, a disciplined <LogLink to="/mindset">mindset</LogLink> helps developers approach problems
+                        However, a disciplined <LogLink to="/mindset">mindset</LogLink> helps developers approach <LogLink to="/problem-solving">problems</LogLink>{" "}
                         with patience and persistence, enabling them to troubleshoot, debug, and solve issues methodically.
                     </li>
                 </ul>

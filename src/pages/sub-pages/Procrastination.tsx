@@ -79,7 +79,7 @@ export default function Procastination() {
                 <ul className="list-disc pl-5 space-y-2 text-zinc-600 dark:text-zinc-400">
                     <li>
                         Adopting the <LogLink to="/mindset">mindset</LogLink> of{' '}
-                        <LogLink to="/how-to-start">“starting now”</LogLink> rather than “someday” shifts the
+                        “<LogLink to="/how-to-start">starting now</LogLink>” rather than “someday” shifts the
                         focus from waiting to acting.
                     </li>
                     <li>
@@ -100,7 +100,7 @@ export default function Procastination() {
                     </li>
                     <li>
                         The output was not just better—it was more meaningful, and the process itself became a
-                        learning <LogLink to="/my-journey">journey.</LogLink>
+                        learning <LogLink to="/my-journey">journey</LogLink>.
                     </li>
                 </ul>
 

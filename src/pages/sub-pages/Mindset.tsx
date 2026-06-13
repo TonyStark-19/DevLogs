@@ -2,6 +2,7 @@
 import LogHeader from '../../components/sub-pages/LogHeader';
 import LogFooter from '../../components/sub-pages/LogFooter';
 import LogLink from '../../components/sub-pages/LogLink.tsx';
+import { TwitterLink } from '../../components/sub-pages/SocialLinks.tsx';
 
 // mindset page component
 export default function Mindset() {
@@ -29,9 +30,9 @@ export default function Mindset() {
                         Zuckerberg built their legacies.
                     </li>
                     <li>
-                        For me, mindset has been everything. My root mindset throughout this entire journey of consistency has
-                        been the simple act of doing 1% each and every day. This compound-interest mindset is exactly what
-                        helped me grow as a developer so rapidly.
+                        For me, mindset has been everything. My root mindset throughout this entire <LogLink to="/journey">journey</LogLink>{" "}
+                        of <LogLink to="/consistency">consistency</LogLink> has been the simple act of doing 1% each and every day. This compound-interest
+                        mindset is exactly what helped me grow as a developer so rapidly.
                     </li>
                     <li>
                         While starting with a nine-to-five job can be a stepping stone, true impact comes from
@@ -53,7 +54,7 @@ export default function Mindset() {
                     <li>
                         Another pillar I live by is that there is always room for improvement. I believe that coming back
                         to your old work and improving it over time is one of the best ways to actually witness and
-                        accelerate your growth.
+                        accelerate your <LogLink to="/growth">growth</LogLink>.
                     </li>
                     <li>
                         Whether it's developing revolutionary software, designing impactful websites, or
@@ -80,15 +81,7 @@ export default function Mindset() {
                 text={
                     <p>
                         What is your mindset? How do you plan to shape the future of technology? Share it with me on my{' '}
-                        <a
-                            target="_blank"
-                            href="https://twitter.com/iamaditya_3"
-                            rel="noreferrer"
-                            className="underline underline-offset-4 decoration-zinc-400 hover:text-zinc-950 
-                            dark:hover:text-zinc-50 transition-colors font-medium"
-                        >
-                            Twitter.
-                        </a>
+                        <TwitterLink />
                     </p>
                 }
             />

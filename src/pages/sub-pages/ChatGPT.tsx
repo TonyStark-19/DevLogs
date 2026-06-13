@@ -89,8 +89,8 @@ export default function ChatGPT() {
                 </ul>
 
                 <p className="border-l-2 border-zinc-300 dark:border-zinc-800 pl-4 italic text-zinc-500 dark:text-zinc-400">
-                    True expertise in coding—or any skill—comes from hands-on experience, persistence, and
-                    curiosity. Using ChatGPT wisely, as a guide rather than a crutch, will lead to genuine
+                    True expertise in coding—or any skill—comes from hands-on experience, persistence, and{" "}
+                    <LogLink to="/curiosity">curiosity</LogLink>. Using ChatGPT wisely, as a guide rather than a crutch, will lead to genuine
                     learning and long-term success.
                 </p>
             </div>

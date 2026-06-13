@@ -2,6 +2,9 @@
 import LogHeader from '../../components/sub-pages/LogHeader';
 import LogFooter from '../../components/sub-pages/LogFooter';
 import LogLink from '../../components/sub-pages/LogLink.tsx';
+import { TwitterLink } from '../../components/sub-pages/SocialLinks.tsx';
+import { DakshJindal } from '../../components/sub-pages/ExternalLinks.tsx';
+import { BeerBiceps } from '../../components/sub-pages/ExternalLinks.tsx';
 
 // podcast page component
 export default function Podcast() {
@@ -32,7 +35,7 @@ export default function Podcast() {
                     <li>
                         Mindset-focused podcasts are particularly impactful, guiding listeners toward adopting{' '}
                         <LogLink to="/productivity">productive</LogLink> thinking patterns and fostering{' '}
-                        <LogLink to="/awareness">self-awareness.</LogLink>
+                        <LogLink to="/awareness">self-awareness</LogLink>.
                     </li>
                     <li>
                         On the other hand, interview-style podcasts provide profound insights into the lives of
@@ -44,7 +47,7 @@ export default function Podcast() {
                 <p>
                     Listening to these life stories not only inspires but also uncovers recurring
                     patterns—like meticulous planning, embracing challenges, and finding joy in the{' '}
-                    <LogLink to="/my-journey">journey.</LogLink>
+                    <LogLink to="/my-journey">journey</LogLink>.
                 </p>
 
                 <ul className="list-disc pl-5 space-y-2 text-zinc-600 dark:text-zinc-400">
@@ -74,26 +77,10 @@ export default function Podcast() {
 
                 <ul className="list-disc pl-5 space-y-3 text-zinc-600 dark:text-zinc-400">
                     <li>
-                        <a
-                            href="https://open.spotify.com/show/5NUTEH8N6zey7rjPth1lsy?si=2f209a61e27b4126"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="font-medium text-zinc-900 dark:text-zinc-100 hover:underline underline-offset-4 decoration-zinc-400"
-                        >
-                            The Mindset show with Daksh Jindal
-                        </a>{' '}
-                        to help build a mindset.
+                        <DakshJindal /> to help build a mindset.
                     </li>
                     <li>
-                        <a
-                            href="https://www.youtube.com/@beerbiceps"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="font-medium text-zinc-900 dark:text-zinc-100 hover:underline underline-offset-4 decoration-zinc-400"
-                        >
-                            YouTube podcasts by Ranveer Allahbadia aka BeerBiceps
-                        </a>
-                        . His channel is filled with numerous personal interviews of well-known and interesting people
+                        <BeerBiceps />. His channel is filled with numerous personal interviews of well-known and interesting people
                         where you can learn from their life experiences.
                     </li>
                 </ul>
@@ -102,17 +89,8 @@ export default function Podcast() {
             {/* Footer */}
             <LogFooter
                 text={
-                    <p>
-                        "Have a favorite podcast which has helped you in your journey? <br /> You can share your recommendations in my{' '}
-                        <a
-                            target="_blank"
-                            href="https://twitter.com/iamaditya_3"
-                            rel="noreferrer"
-                            className="underline underline-offset-4 decoration-zinc-400 hover:text-zinc-950 dark:hover:text-zinc-50 transition-colors"
-                        >
-                            Twitter
-                        </a>
-                        "
+                    <p className='leading-7'>
+                        "Have a favorite podcast which has helped you in your journey? <br /> You can share your recommendations in my <TwitterLink />"
                     </p>
                 }
             />

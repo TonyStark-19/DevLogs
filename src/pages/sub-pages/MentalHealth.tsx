@@ -3,6 +3,7 @@ import LogHeader from '../../components/sub-pages/LogHeader';
 import LogFooter from '../../components/sub-pages/LogFooter';
 import LogLink from '../../components/sub-pages/LogLink.tsx';
 import SocialLinks from '../../components/sub-pages/SocialLinks.tsx';
+import { TwitterLink } from '../../components/sub-pages/SocialLinks.tsx';
 
 // mental health page component
 export default function MentalHealth() {
@@ -33,12 +34,12 @@ export default function MentalHealth() {
                     <li>
                         Many people struggle with mental health challenges, but the key
                         to overcoming them lies in self-improvement, self-care, and maintaining a positive{' '}
-                        <LogLink to="/mindset">mindset.</LogLink>
+                        <LogLink to="/mindset">mindset</LogLink>.
                     </li>
                     <li>
-                        For me, mental health has been something deeply personal. While it might look from the outside like I am just a highly
-                        consistent developer coding daily and building seamlessly in public, only I know the sheer weight of the incredibly tough
-                        days hidden in between.
+                        For me, mental health has been something deeply personal. While it might look from the outside like I am just a highly{" "}
+                        <LogLink to="/consistency">consistent</LogLink> developer coding daily and building seamlessly in public, only I know the sheer weight 
+                        of the incredibly tough days hidden in between.
                     </li>
                     <li>
                         It got intensely hard at points—navigating isolation with no one to talk to, dealing with a poor environment at home, and
@@ -49,7 +50,7 @@ export default function MentalHealth() {
 
                 <p>
                     Instead of getting stuck in negative thoughts or circumstances beyond our control, the
-                    best approach is to keep moving forward by focusing on <LogLink to="/growth">personal growth.</LogLink>
+                    best approach is to keep moving forward by focusing on <LogLink to="/growth">personal growth</LogLink>.
                 </p>
 
                 <ul className="list-disc pl-5 space-y-2 text-zinc-600 dark:text-zinc-400">
@@ -106,15 +107,7 @@ export default function MentalHealth() {
                 text={
                     <p>
                         “What do you do to maintain good mental health? Let me know in my{' '}
-                        <a
-                            target="_blank"
-                            href="https://twitter.com/iamaditya_3"
-                            rel="noreferrer"
-                            className="underline underline-offset-4 decoration-zinc-400 hover:text-zinc-950 
-                            dark:hover:text-zinc-50 transition-colors font-medium"
-                        >
-                            Twitter
-                        </a>
+                        <TwitterLink />
                         ”
                     </p>
                 }

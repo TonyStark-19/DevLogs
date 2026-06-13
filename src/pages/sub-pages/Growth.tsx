@@ -123,7 +123,7 @@ export default function Growth() {
             <LogFooter
                 text={
                     <p>
-                        “Stay curious and continue to grow your skills! Check out our resources and start your journey today.”
+                        “Stay curious and continue to grow your skills! Check out my resources and start your journey today.”
                     </p>
                 }
             />

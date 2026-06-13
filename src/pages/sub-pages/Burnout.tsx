@@ -21,7 +21,7 @@ export default function Burnout() {
                 <p>
                     Burnout is a significant challenge, particularly in the tech field, where developers and
                     programmers spend long hours in front of their screens, continuously working on{' '}
-                    <LogLink to="/problem-solving">complex problems.</LogLink>
+                    <LogLink to="/problem-solving">complex problems</LogLink>.
                 </p>
 
                 <ul className="list-disc pl-5 space-y-2 text-zinc-600 dark:text-zinc-400">

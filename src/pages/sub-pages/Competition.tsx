@@ -22,7 +22,7 @@ export default function Competition() {
                 <p>
                     Competition is a driving force that pushes individuals to enhance their <LogLink to="/skills">skills</LogLink>,
                     improve their work ethic, and stay <LogLink to="/consistency">consistent</LogLink> in their{' '}
-                    <LogLink to="/my-journey">journey.</LogLink>
+                    <LogLink to="/my-journey">journey</LogLink>.
                 </p>
 
                 <ul className="list-disc pl-5 space-y-2 text-zinc-600 dark:text-zinc-400">
@@ -62,7 +62,7 @@ export default function Competition() {
 
                 <p>
                     The tech industry is highly competitive because many people are working towards similar
-                    goals. Whether it’s learning a new programming language, building projects, or mastering
+                    goals. Whether it's learning a new programming language, building projects, or mastering
                     algorithms, there are countless others doing the same.
                 </p>
 

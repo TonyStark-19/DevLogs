@@ -30,7 +30,7 @@ export default function Productivity() {
                         <LogLink to="/discipline">discipline</LogLink>, and a structured approach to your daily tasks.
                     </li>
                     <li>
-                        It is the ability to manage time effectively, prioritize essential tasks, and maintain
+                        It is the ability to <LogLink to="/time-management">manage time</LogLink> effectively, prioritize essential tasks, and maintain
                         focus without unnecessary distractions.
                     </li>
                 </ul>

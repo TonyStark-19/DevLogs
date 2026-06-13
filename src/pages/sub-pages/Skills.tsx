@@ -41,7 +41,7 @@ export default function Skills() {
                 <ul className="list-disc pl-5 space-y-2 text-zinc-600 dark:text-zinc-400">
                     <li>
                         Mastery doesn't come overnight—it requires continuous learning, regular practice, and
-                        hands-on project building. Working on real-world projects helps reinforce concepts,
+                        hands-on <LogLink to="/project-building">project building</LogLink>. Working on real-world projects helps reinforce concepts,
                         improve efficiency, and boost confidence in applying knowledge practically.
                     </li>
                     <li>
@@ -85,7 +85,7 @@ export default function Skills() {
 
                 <p className="border-l-2 border-zinc-300 dark:border-zinc-800 pl-4 italic text-zinc-500 dark:text-zinc-400">
                     Ultimately, success in tech isn't just about what you know—it's about how well you apply
-                    what you know. The journey of skill development is ongoing, and those who commit to
+                    what you know. The <LogLink to="/journey">journey</LogLink> of skill development is ongoing, and those who commit to
                     continuous learning and self-improvement will always stay ahead in the game.
                 </p>
             </div>

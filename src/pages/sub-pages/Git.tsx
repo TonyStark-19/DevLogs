@@ -3,6 +3,7 @@ import LogHeader from '../../components/sub-pages/LogHeader';
 import LogFooter from '../../components/sub-pages/LogFooter';
 import LogLink from '../../components/sub-pages/LogLink.tsx';
 import SocialLinks from '../../components/sub-pages/SocialLinks.tsx';
+import { GitHubLink } from '../../components/sub-pages/SocialLinks.tsx';
 
 // git page component
 export default function Git() {
@@ -37,7 +38,7 @@ export default function Git() {
                         <LogLink to="/project-building">projects</LogLink> efficiently.
                     </li>
                     <li>
-                        For me, GitHub has been far more than just a tool—it is a space I use literally every single day. Because I build daily, I have
+                        For me, <GitHubLink /> has been far more than just a tool—it is a space I use literally every single day. Because I build daily, I have
                         been actively shipping and iterating directly on my profile, turning code management into a muscle memory habit.
                     </li>
                 </ul>
@@ -56,7 +57,7 @@ export default function Git() {
                     <li>
                         Contributing to open-source projects not only helps enhance software quality but also
                         enables developers to improve their <LogLink to="/skills">coding skills</LogLink>, understand
-                        real-world codebases, and build a strong <LogLink to="/networking">professional network.</LogLink>
+                        real-world codebases, and build a strong <LogLink to="/networking">professional network</LogLink>.
                     </li>
                     <li>
                         Given my core mantra is continuous upskilling—building projects, improving them with time, and contributing to open source—GitHub
@@ -101,9 +102,9 @@ export default function Git() {
                         collaborate, and build impactful projects together.
                     </li>
                     <li>
-                        Over time, my personal contribution graph has grown extensively greener and more consistent. I continuously loop back to older
-                        repos to refine code architectures, implement best practices as I pick them up, and improve the documentation of each project so
-                        it remains highly accessible for both my future self and anyone else visiting the repository.
+                        Over time, my personal contribution graph has grown extensively greener and more <LogLink to="/consistency">consistent</LogLink>.{" "}
+                        I continuously loop back to older repos to refine code architectures, implement best practices as I pick them up, and improve the
+                        documentation of each project so it remains highly accessible for both my future self and anyone else visiting the repository.
                     </li>
                 </ul>
 
@@ -117,7 +118,8 @@ export default function Git() {
                 <ul className="list-disc pl-5 space-y-2 text-zinc-600 dark:text-zinc-400">
                     <li>
                         Let me share my honest take on this: when you document your progress across public networks like <SocialLinks />, and ship code
-                        to GitHub daily, you are not doing it for external approval. You are doing it for your own personal growth.
+                        to GitHub daily, you are not doing it for external approval. You are doing it for your own personal{" "}
+                        <LogLink to="/growth">growth</LogLink>.
                     </li>
                     <li>
                         The deeper you dive into committing code, the more naturally you begin to think in code. You learn how architectures behave in production,
@@ -138,15 +140,7 @@ export default function Git() {
                 text={
                     <p>
                         Here is my{' '}
-                        <a
-                            target="_blank"
-                            href="https://github.com/TonyStark-19"
-                            rel="noreferrer"
-                            className="underline underline-offset-4 decoration-zinc-400 hover:text-zinc-950 
-                            dark:hover:text-zinc-50 transition-colors font-medium"
-                        >
-                            GitHub
-                        </a>
+                        <GitHubLink />
                         . Let's connect here :)
                     </p>
                 }

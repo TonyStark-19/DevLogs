@@ -26,7 +26,7 @@ export default function Hobbies() {
                 <ul className="list-disc pl-5 space-y-2 text-zinc-600 dark:text-zinc-400">
                     <li>
                         In a fast-paced and <LogLink to="/competition">competitive</LogLink> world, constantly working
-                        without a break can lead to exhaustion and decreased <LogLink to="/productivity">productivity.</LogLink>
+                        without a break can lead to exhaustion and decreased <LogLink to="/productivity">productivity</LogLink>.
                     </li>
                     <li>
                         Hobbies act as a reset button, allowing the mind to relax and recharge. They provide a
@@ -43,7 +43,7 @@ export default function Hobbies() {
                 <ul className="list-disc pl-5 space-y-2 text-zinc-600 dark:text-zinc-400">
                     <li>
                         For many, coding itself becomes a hobby—something they genuinely enjoy beyond just being
-                        a professional <LogLink to="/skills">skill.</LogLink> As for me, it turned out to be a hobby.
+                        a professional <LogLink to="/skills">skill</LogLink>. As for me, it turned out to be a hobby.
                     </li>
                     <li>
                         However, relying solely on work-related activities can still lead to fatigue, which is
@@ -67,8 +67,8 @@ export default function Hobbies() {
                 </ul>
 
                 <p>
-                    The key to sustaining long-term growth and consistency in any field is to incorporate
-                    enjoyable activities into daily life.
+                    The key to sustaining long-term <LogLink to="/growth">growth</LogLink> and <LogLink to="/consistency">consistency</LogLink>{" "}
+                    in any field is to incorporate enjoyable activities into daily life.
                 </p>
 
                 <ul className="list-disc pl-5 space-y-2 text-zinc-600 dark:text-zinc-400">
@@ -80,7 +80,7 @@ export default function Hobbies() {
 
                 <p className="border-l-2 border-zinc-300 dark:border-zinc-800 pl-4 italic text-zinc-500 dark:text-zinc-400">
                     Therefore, finding and nurturing hobbies is not just a luxury but a necessity for a
-                    fulfilling and productive <LogLink to="/my-journey">journey.</LogLink>
+                    fulfilling and productive <LogLink to="/my-journey">journey</LogLink>.
                 </p>
             </div>
 
