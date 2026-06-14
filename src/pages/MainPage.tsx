@@ -42,6 +42,9 @@ import Burnout from "./sub-pages/Burnout";
 import Growth from "./sub-pages/Growth";
 import Discipline from "./sub-pages/Discipline";
 import OpenSource from "./sub-pages/OpenSource";
+import Motivation from "./sub-pages/Motivation";
+import Communities from "./sub-pages/Communities";
+import Exhaustion from "./sub-pages/Exhaustion";
 
 // main page component
 export default function MainPage(): React.JSX.Element {
@@ -103,6 +106,9 @@ export default function MainPage(): React.JSX.Element {
                             <Route path="/growth" element={<Growth />} />
                             <Route path="/discipline" element={<Discipline />} />
                             <Route path="/open-source" element={<OpenSource />} />
+                            <Route path="/motivation" element={<Motivation />} />
+                            <Route path="/communities" element={<Communities />} />
+                            <Route path="/exhaustion" element={<Exhaustion />} />
                         </Routes>
                     </ContentView>
                 </div>

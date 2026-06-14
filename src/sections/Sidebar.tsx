@@ -54,6 +54,9 @@ const rawLogs: LogItem[] = [
     { id: 'Growth', title: 'Growth', path: '/growth' },
     { id: 'Discipline', title: 'Discipline', path: '/discipline' },
     { id: 'Open-source', title: 'Open source', path: '/open-source' },
+    { id: 'Motivation', title: 'Motivation', path: '/motivation' },
+    { id: 'Communities', title: 'Communities', path: '/communities' },
+    { id: 'Exhaustion', title: 'Exhaustion', path: '/exhaustion' },
 ];
 
 // Sidebar component definition
