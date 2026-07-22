@@ -45,6 +45,9 @@ import OpenSource from "./sub-pages/OpenSource";
 import Motivation from "./sub-pages/Motivation";
 import Communities from "./sub-pages/Communities";
 import Exhaustion from "./sub-pages/Exhaustion";
+import Meditation from "./sub-pages/Meditation";
+import Freelance from "./sub-pages/Freelance";
+import HundredDaysOfCode from "./sub-pages/HundredDaysOfCode";
 
 // main page component
 export default function MainPage(): React.JSX.Element {
@@ -109,6 +112,9 @@ export default function MainPage(): React.JSX.Element {
                             <Route path="/motivation" element={<Motivation />} />
                             <Route path="/communities" element={<Communities />} />
                             <Route path="/exhaustion" element={<Exhaustion />} />
+                            <Route path="/meditation" element={<Meditation />} />
+                            <Route path="/freelance" element={<Freelance />} />
+                            <Route path="/100DaysOfCode" element={<HundredDaysOfCode />} />
                         </Routes>
                     </ContentView>
                 </div>
