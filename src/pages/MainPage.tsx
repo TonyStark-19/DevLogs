@@ -51,6 +51,9 @@ import HundredDaysOfCode from "./sub-pages/HundredDaysOfCode";
 import ComfortZone from "./sub-pages/ComfortZone";
 import Tutorials from "./sub-pages/Tutorials";
 import Documentation from "./sub-pages/Documentation";
+import Upskilling from "./sub-pages/Upskilling";
+import Debugging from "./sub-pages/Debugging";
+import Writing from "./sub-pages/Writing";
 
 // main page component
 export default function MainPage(): React.JSX.Element {
@@ -121,6 +124,9 @@ export default function MainPage(): React.JSX.Element {
                             <Route path="/comfort-zone" element={<ComfortZone />} />
                             <Route path="/tutorials" element={<Tutorials />} />
                             <Route path="/documentation" element={<Documentation />} />
+                            <Route path="/upskilling" element={<Upskilling />} />
+                            <Route path="/debugging" element={<Debugging />} />
+                            <Route path="/writing" element={<Writing />} />
                         </Routes>
                     </ContentView>
                 </div>
