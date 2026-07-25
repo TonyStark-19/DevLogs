@@ -118,14 +118,14 @@ export default function Sidebar({ isOpen = false, onClose }: SidebarProps) {
             ${isOpen
                     ? "translate-x-0"
                     : "-translate-x-full"
-                }
+                } 
             xl:relative xl:top-0 xl:left-0 xl:z-auto xl:w-80 xl:h-screen xl:translate-x-0 xl:border-r xl:dark:border-zinc-900 xl:border-zinc-200`}
         >
             {/* Background Dot Layer Grid */}
             <div
                 className="absolute inset-0 opacity-[0.02] dark:opacity-[0.03] pointer-events-none bg-[radial-gradient(#fff_1px,transparent_1px)] 
                 bg-size-[16px_16px]"
-            ></div>
+            />
 
             {/* Profile Banner */}
             <ProfileBanner

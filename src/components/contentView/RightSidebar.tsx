@@ -47,6 +47,7 @@ export default function RightSidebar({ internalLinks }: { internalLinks: Interna
                                     group-hover:w-2 group-hover:bg-zinc-400 dark:group-hover:bg-zinc-500 
                                     transition-all shrink-0 duration-300 easy-in-out"
                                 />
+
                                 <span className="group-hover:translate-x-0.5 transition-transform duration-200 ease-out">
                                     {mention.label}
                                 </span>

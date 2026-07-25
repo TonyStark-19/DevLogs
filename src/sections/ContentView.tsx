@@ -82,7 +82,7 @@ export default function ContentView({ children, isLinksOpen, setIsLinksOpen }: C
             <div
                 className="absolute inset-0 opacity-[0.015] dark:opacity-[0.025] pointer-events-none bg-[radial-gradient(#fff_1px,transparent_1px)] 
                 bg-size-[24px_24px]"
-            ></div>
+            />
 
             {/* Middle Workspace Layout */}
             <main
@@ -93,7 +93,8 @@ export default function ContentView({ children, isLinksOpen, setIsLinksOpen }: C
                 {/* Core Content Box */}
                 <div
                     className={`w-full max-w-5xl px-6 py-10 md:px-12 lg:px-16 flex-1 transition-all duration-300 
-                    ${hasMentions ? 'mx-auto'
+                    ${hasMentions
+                            ? 'mx-auto'
                             : 'mx-0'
                         }`}
                 >

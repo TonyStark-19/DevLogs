@@ -25,7 +25,7 @@ export default function Navlinks({ sortedAndFilteredLogs, navigate, location }: 
                             key={log.id}
                             onClick={() => navigate(log.path)}
                             className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition-all duration-200 group text-left
-                                cursor-pointer 
+                            cursor-pointer 
                                 ${isActive
                                     ? 'dark:bg-zinc-100 dark:text-zinc-950 bg-zinc-900 text-white shadow-lg font-semibold'
                                     : 'dark:text-zinc-400 dark:hover:text-zinc-100 dark:hover:bg-zinc-900/60 text-zinc-600 hover:text-zinc-900 hover:bg-zinc-200/60'
