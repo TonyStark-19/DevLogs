@@ -54,6 +54,9 @@ import Documentation from "./sub-pages/Documentation";
 import Upskilling from "./sub-pages/Upskilling";
 import Debugging from "./sub-pages/Debugging";
 import Writing from "./sub-pages/Writing";
+import Distraction from "./sub-pages/Distraction";
+import Confidence from "./sub-pages/Confidence";
+import SelfDoubt from "./sub-pages/SelfDoubt";
 
 // main page component
 export default function MainPage(): React.JSX.Element {
@@ -127,6 +130,9 @@ export default function MainPage(): React.JSX.Element {
                             <Route path="/upskilling" element={<Upskilling />} />
                             <Route path="/debugging" element={<Debugging />} />
                             <Route path="/writing" element={<Writing />} />
+                            <Route path="/distraction" element={<Distraction />} />
+                            <Route path="/confidence" element={<Confidence />} />
+                            <Route path="/self-doubt" element={<SelfDoubt />} />
                         </Routes>
                     </ContentView>
                 </div>
