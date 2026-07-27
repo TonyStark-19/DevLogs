@@ -57,6 +57,9 @@ import Writing from "./sub-pages/Writing";
 import Distraction from "./sub-pages/Distraction";
 import Confidence from "./sub-pages/Confidence";
 import SelfDoubt from "./sub-pages/SelfDoubt";
+import Journaling from "./sub-pages/Journaling";
+import WorkLifeBalance from "./sub-pages/WorkLifeBalance";
+import Inspiration from "./sub-pages/Inspiration";
 
 // main page component
 export default function MainPage(): React.JSX.Element {
@@ -133,6 +136,9 @@ export default function MainPage(): React.JSX.Element {
                             <Route path="/distraction" element={<Distraction />} />
                             <Route path="/confidence" element={<Confidence />} />
                             <Route path="/self-doubt" element={<SelfDoubt />} />
+                            <Route path="/journaling" element={<Journaling />} />
+                            <Route path="/work-life-balance" element={<WorkLifeBalance />} />
+                            <Route path="/inspiration" element={<Inspiration />} />
                         </Routes>
                     </ContentView>
                 </div>
