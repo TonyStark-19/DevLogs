@@ -72,6 +72,9 @@ const rawLogs: LogItem[] = [
     { id: 'Journaling', title: 'Journaling', path: '/journaling' },
     { id: 'WorkLifeBalance', title: 'Work Life Balance', path: '/work-life-balance' },
     { id: 'Inspiration', title: 'Inspiration', path: '/inspiration' },
+    { id: 'SelfImprovement', title: 'Self Improvement', path: '/self-improvement' },
+    { id: 'Focus', title: 'Focus', path: '/focus' },
+    { id: 'Ambition', title: 'Ambition', path: '/ambition' },
 ];
 
 // Sidebar component definition
@@ -120,12 +123,12 @@ export default function Sidebar({ isOpen = false, onClose }: SidebarProps) {
         <aside
             className={`fixed top-14 left-0 z-40 w-full h-[calc(100vh-3.5rem)] flex flex-col overflow-hidden transition-transform duration-300 ease-in-out
             dark:bg-zinc-950 bg-zinc-50
-
             ${isOpen
                     ? "translate-x-0"
                     : "-translate-x-full"
-                } 
-            xl:relative xl:top-0 xl:left-0 xl:z-auto xl:w-80 xl:h-screen xl:translate-x-0 xl:border-r xl:dark:border-zinc-900 xl:border-zinc-200`}
+                }
+            xl:relative xl:top-0 xl:left-0 xl:z-auto xl:w-80 xl:h-screen xl:translate-x-0 xl:border-r xl:dark:border-zinc-900 xl:border-zinc-200`
+            }
         >
             {/* Background Dot Layer Grid */}
             <div
