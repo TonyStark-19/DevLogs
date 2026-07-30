@@ -63,6 +63,7 @@ import Inspiration from "./sub-pages/Inspiration";
 import SelfImprovement from "./sub-pages/SelfImprovement";
 import Focus from "./sub-pages/Focus";
 import Ambition from "./sub-pages/Ambition";
+import Passion from "./sub-pages/Passion";
 
 // main page component
 export default function MainPage(): React.JSX.Element {
@@ -145,6 +146,7 @@ export default function MainPage(): React.JSX.Element {
                             <Route path="/self-improvement" element={<SelfImprovement />} />
                             <Route path="/focus" element={<Focus />} />
                             <Route path="/ambition" element={<Ambition />} />
+                            <Route path="/passion" element={<Passion />} />
                         </Routes>
                     </ContentView>
                 </div>
