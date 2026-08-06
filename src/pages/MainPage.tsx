@@ -64,6 +64,10 @@ import SelfImprovement from "./sub-pages/SelfImprovement";
 import Focus from "./sub-pages/Focus";
 import Ambition from "./sub-pages/Ambition";
 import Passion from "./sub-pages/Passion";
+import CommonMistakes from "./sub-pages/CommonMistakes";
+import BestPractices from "./sub-pages/BestPractices";
+import Resources from "./sub-pages/Resources";
+import Books from "./sub-pages/Books";
 
 // main page component
 export default function MainPage(): React.JSX.Element {
@@ -147,6 +151,10 @@ export default function MainPage(): React.JSX.Element {
                             <Route path="/focus" element={<Focus />} />
                             <Route path="/ambition" element={<Ambition />} />
                             <Route path="/passion" element={<Passion />} />
+                            <Route path="/common-mistakes" element={<CommonMistakes />} />
+                            <Route path="/best-practices" element={<BestPractices />} />
+                            <Route path="/resources" element={<Resources />} />
+                            <Route path="/books" element={<Books />} />
                         </Routes>
                     </ContentView>
                 </div>
