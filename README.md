@@ -65,40 +65,64 @@ The project is live and can be viewed here: [DevLogs](https://devlogs-henna.verc
 
 ---
 
-## 📚 Topics Covered
-
-| #  | Topic             | Description                                                                                                          |
-| -- | ----------------- | -------------------------------------------------------------------------------------------------------------------- |
-| 1  | What is DevLogs?  | Introduction to the project, its purpose, and the philosophy behind maintaining a public development knowledge base. |
-| 2  | Consistency       | Lessons on building sustainable habits and showing up every day, even when motivation fades.                         |
-| 3  | How to Start?     | Practical advice for beginners on beginning their development journey without overthinking.                          |
-| 4  | Procrastination   | Understanding procrastination, its causes, and ways to overcome it effectively.                                      |
-| 5  | Time Management   | Strategies for balancing learning, projects, work, and personal responsibilities.                                    |
-| 6  | Podcast           | Recommended podcasts that provide valuable insights into technology, careers, and personal growth.                   |
-| 7  | YouTube Channels  | Curated channels that helped shape my learning journey and technical understanding.                                  |
-| 8  | Networking        | Building meaningful professional relationships and growing within the developer community.                           |
-| 9  | Project Building  | The importance of learning through projects and turning knowledge into practical experience.                         |
-| 10 | Problem Solving   | Approaches for tackling coding challenges and developing analytical thinking.                                        |
-| 11 | Dedication        | The role of commitment and persistence in achieving long-term goals.                                                 |
-| 12 | Git & GitHub      | Version control fundamentals, collaboration workflows, and best practices.                                           |
-| 13 | Mental Health     | Maintaining a healthy mindset while navigating the challenges of software development.                               |
-| 14 | Physical Health   | Why physical well-being plays a critical role in productivity and long-term success.                                 |
-| 15 | Productivity      | Techniques, systems, and habits for making consistent progress.                                                      |
-| 16 | Awareness         | Developing self-awareness and understanding personal strengths, weaknesses, and patterns.                            |
-| 17 | Competition       | Healthy perspectives on competition and personal growth within the tech industry.                                    |
-| 18 | ChatGPT           | Thoughts, use cases, and practical ways AI can assist developers in their daily workflow.                            |
-| 19 | Hobbies           | The value of interests outside programming and their impact on creativity and balance.                               |
-| 20 | Music             | How music influences focus, productivity, and the overall learning experience.                                       |
-| 21 | My Coding Journey | Personal reflections, milestones, and lessons learned throughout my development path.                                |
-| 22 | Mindset           | Building a growth-oriented perspective for learning and overcoming challenges.                                       |
-| 23 | Curiosity         | Why curiosity is one of the most valuable traits for continuous improvement.                                         |
-| 24 | Journey           | Broader reflections on progress, setbacks, and the reality of long-term growth.                                      |
-| 25 | Skills            | Understanding technical skill development and continuous learning.                                                   |
-| 26 | Soft Skills       | Communication, teamwork, leadership, and other essential non-technical abilities.                                    |
-| 27 | Burnout           | Recognizing burnout early and maintaining a healthy relationship with work and learning.                             |
-| 28 | Growth            | Personal and professional development through deliberate practice and reflection.                                    |
-| 29 | Discipline        | Building systems and routines that create progress regardless of motivation.                                         |
-| 30 | Open Source       | Contributing to open source projects, collaboration, and learning through community involvement.                     |
+|  # | Topic             | Description                                                                                                          |
+| -: | ----------------- | -------------------------------------------------------------------------------------------------------------------- |
+|  1 | #100DaysOfCode    | Building a daily coding habit through consistency, accountability, and continuous learning.                          |
+|  2 | Ambition          | Setting meaningful goals and staying driven to achieve long-term success.                                            |
+|  3 | Awareness         | Developing self-awareness and understanding personal strengths, weaknesses, and patterns.                            |
+|  4 | Best Practices    | Proven techniques, conventions, and habits that improve code quality and productivity.                               |
+|  5 | Books             | Recommended books for software development, productivity, mindset, and personal growth.                              |
+|  6 | Burnout           | Recognizing burnout early and maintaining a healthy relationship with work and learning.                             |
+|  7 | ChatGPT           | Thoughts, use cases, and practical ways AI can assist developers in their daily workflow.                            |
+|  8 | Comfort Zone      | Why stepping outside your comfort zone is essential for learning and growth.                                         |
+|  9 | Common Mistakes   | Frequent mistakes developers make and how to avoid them.                                                             |
+| 10 | Communities       | The importance of joining developer communities to learn, share, and grow together.                                  |
+| 11 | Competition       | Healthy perspectives on competition and personal growth within the tech industry.                                    |
+| 12 | Confidence        | Building confidence through consistent practice, learning, and experience.                                           |
+| 13 | Consistency       | Lessons on building sustainable habits and showing up every day, even when motivation fades.                         |
+| 14 | Curiosity         | Why curiosity is one of the most valuable traits for continuous improvement.                                         |
+| 15 | Debugging         | Effective approaches and techniques for identifying and fixing software issues.                                      |
+| 16 | Dedication        | The role of commitment and persistence in achieving long-term goals.                                                 |
+| 17 | Discipline        | Building systems and routines that create progress regardless of motivation.                                         |
+| 18 | Distraction       | Identifying common distractions and improving focus while learning or working.                                       |
+| 19 | Documentation     | Learning to read, understand, and write documentation effectively.                                                   |
+| 20 | Exhaustion        | Recognizing mental and physical exhaustion and recovering before burnout.                                            |
+| 21 | Focus             | Techniques for maintaining deep focus and avoiding context switching.                                                |
+| 22 | Freelance         | Insights into freelancing, finding clients, and managing independent work.                                           |
+| 23 | Git & GitHub      | Version control fundamentals, collaboration workflows, and best practices.                                           |
+| 24 | Growth            | Personal and professional development through deliberate practice and reflection.                                    |
+| 25 | Hobbies           | The value of interests outside programming and their impact on creativity and balance.                               |
+| 26 | How to Start?     | Practical advice for beginners on beginning their development journey without overthinking.                          |
+| 27 | Inspiration       | Sources of inspiration that encourage continuous learning and perseverance.                                          |
+| 28 | Journaling        | Using journaling to reflect on progress, challenges, and personal growth.                                            |
+| 29 | Journey           | Broader reflections on progress, setbacks, and the reality of long-term growth.                                      |
+| 30 | Meditation        | The benefits of meditation for focus, mental clarity, and stress management.                                         |
+| 31 | Mental Health     | Maintaining a healthy mindset while navigating the challenges of software development.                               |
+| 32 | Mindset           | Building a growth-oriented perspective for learning and overcoming challenges.                                       |
+| 33 | Motivation        | Understanding motivation and how to stay committed when it fades.                                                    |
+| 34 | Music             | How music influences focus, productivity, and the overall learning experience.                                       |
+| 35 | My Coding Journey | Personal reflections, milestones, and lessons learned throughout my development path.                                |
+| 36 | Networking        | Building meaningful professional relationships and growing within the developer community.                           |
+| 37 | Open Source       | Contributing to open source projects, collaboration, and learning through community involvement.                     |
+| 38 | Passion           | Finding purpose in programming and sustaining long-term enthusiasm.                                                  |
+| 39 | Physical Health   | Why physical well-being plays a critical role in productivity and long-term success.                                 |
+| 40 | Podcast           | Recommended podcasts that provide valuable insights into technology, careers, and personal growth.                   |
+| 41 | Problem Solving   | Approaches for tackling coding challenges and developing analytical thinking.                                        |
+| 42 | Procrastination   | Understanding procrastination, its causes, and ways to overcome it effectively.                                      |
+| 43 | Productivity      | Techniques, systems, and habits for making consistent progress.                                                      |
+| 44 | Project Building  | The importance of learning through projects and turning knowledge into practical experience.                         |
+| 45 | Resources         | Curated learning resources, tools, and references for developers.                                                    |
+| 46 | Self Doubt        | Overcoming self-doubt, imposter syndrome, and building self-belief.                                                  |
+| 47 | Self Improvement  | Continuous improvement through intentional learning, habits, and reflection.                                         |
+| 48 | Skills            | Understanding technical skill development and continuous learning.                                                   |
+| 49 | Soft Skills       | Communication, teamwork, leadership, and other essential non-technical abilities.                                    |
+| 50 | Time Management   | Strategies for balancing learning, projects, work, and personal responsibilities.                                    |
+| 51 | Tutorials         | Making the most of tutorials while avoiding tutorial dependency.                                                     |
+| 52 | Upskilling        | Continuously learning new technologies and improving existing skills.                                                |
+| 53 | What is DevLogs?  | Introduction to the project, its purpose, and the philosophy behind maintaining a public development knowledge base. |
+| 54 | Work Life Balance | Maintaining a healthy balance between work, learning, and personal life.                                             |
+| 55 | Writing           | Why writing improves learning, communication, and technical understanding.                                           |
+| 56 | YouTube Channels  | Curated channels that helped shape my learning journey and technical understanding.                                  |
 
 ---
 
