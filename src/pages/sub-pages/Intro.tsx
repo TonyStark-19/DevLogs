@@ -40,14 +40,13 @@ export default function Intro() {
             {/* Main Core Text Content Description */}
             <div className="space-y-6 mb-8 text-[15px] leading-relaxed antialiased">
                 <p className="dark:text-zinc-300 text-zinc-700">
-                    Welcome to <span className="font-bold dark:text-white text-zinc-900">DevLogs</span>!{' '}
-                    This is a clean, intentional space where I document my technical journey—breaking down complex projects, architecture lessons, personal
-                    code hurdles, and minor insights picked up along the way.
+                    Welcome to <span className="font-bold dark:text-white text-zinc-900">DevLogs</span>! This is a clean, intentional space where I document my
+                    technical journey—breaking down complex projects, architecture lessons, personal code hurdles, and minor insights picked up along the way.
                 </p>
 
                 <p className="dark:text-zinc-300 text-zinc-700">
-                    Whether you are a beginner exploring your first state hooks or an experienced engineer organizing microservices, I hope you locate a
-                    piece of engineering insight that helps your workflow.
+                    Whether you are a beginner exploring your first state hooks or an experienced engineer organizing microservices, I hope you locate a piece of
+                    engineering insight that helps your workflow.
                 </p>
             </div>
 

@@ -3,8 +3,20 @@ import LogHeader from '../../components/sub-pages/LogHeader';
 import LogFooter from '../../components/sub-pages/LogFooter';
 import LogLink from '../../components/sub-pages/LogLink.tsx';
 
+// import external links
+import { LinkedInLink } from '../../components/sub-pages/SocialLinks.tsx';
+import SocialLinks from '../../components/sub-pages/SocialLinks.tsx';
+
+// import day streak helper
+import useDaysStreak from '../../components/utils/useDaysStreak.tsx';
+
+// streak start data constant
+const STREAK_START = Date.UTC(2024, 6, 9); // July 9, 2024
+
 // 100daysOfCode page component
 export default function HundredDaysOfCode() {
+    const daysStreak = useDaysStreak(STREAK_START);
+
     return (
         <article
             className="max-w-3xl mx-auto px-2 py-5"
@@ -20,9 +32,9 @@ export default function HundredDaysOfCode() {
             <div className="mt-8 space-y-6 dark:text-zinc-300 text-zinc-700 text-[15px] leading-relaxed antialiased">
                 <p>
                     The <strong className="text-zinc-900 dark:text-zinc-100 font-medium">#100DaysOfCode</strong> challenge
-                    has been the core pillar of my developer journey. Back in 2024, when I first created my LinkedIn profile,
-                    I used to scroll past engineers posting their daily progress under the challenge tag. I constantly wondered when
-                    I would finally step up, enter the arena, and start documenting my own builds like that.
+                    has been the core pillar of my <LogLink to="/100DaysOfCode">developer journey</LogLink>. Back in 2024, when I
+                    first created my <LinkedInLink /> profile, I used to scroll past engineers posting their daily progress under the challenge tag. I
+                    constantly wondered when I would finally step up, enter the arena, and start documenting my own builds like that.
                 </p>
 
                 <p>
@@ -33,29 +45,31 @@ export default function HundredDaysOfCode() {
 
                 <ul className="list-disc pl-5 space-y-2 text-zinc-600 dark:text-zinc-400">
                     <li>
-                        Since taking that oath, it has grown into <strong className="text-zinc-900 dark:text-zinc-100 font-medium">743+ consecutive
+                        Since taking that oath, it has grown into <strong className="text-zinc-900 dark:text-zinc-100 font-medium">{daysStreak} consecutive
                             days</strong> of uninterrupted <LogLink to="/consistency">consistency</LogLink>.
                     </li>
                     <li>
-                        That means I have completed over 7 full, back-to-back #100DaysOfCode cycles without skipping a single day—writing code, debugging
-                        systems, and logging progress every 24 hours.
+                        That means I have completed over {daysStreak.toString()[0]} full, back-to-back #100DaysOfCode cycles without skipping a single
+                        day—writing code, <LogLink to="/debugging">debugging</LogLink> systems, and logging progress every 24 hours.
                     </li>
                 </ul>
 
                 <p>
                     Doing something daily for 100 days straight is not as simple as it sounds. It shapes and sharpens your technical{" "}
-                    <LogLink to="/skills">skills</LogLink> in a way that people who upskill intermittently on random weekends simply cannot grasp.
+                    <LogLink to="/skills">skills</LogLink> in a way that people who <LogLink to="/upskilling">upskill</LogLink> intermittently on random
+                    weekends simply cannot grasp.
                 </p>
 
                 <ul className="list-disc pl-5 space-y-3 text-zinc-600 dark:text-zinc-400">
                     <li>
                         <strong className="text-zinc-900 dark:text-zinc-100 font-medium">The 1% Rule:</strong> My objective was never to build a
-                        massive enterprise system overnight. It was simply to focus on improving by 1% each day—learning a concept, <LogLink to="/project-building">
-                            building a project</LogLink>, or delivering <LogLink to="/open-source">open-source contributions</LogLink>.
+                        massive enterprise system overnight. It was simply to <LogLink to="/focus">focus</LogLink> on improving by 1% each day—learning
+                        a concept, <LogLink to="/project-building"> building a project</LogLink>, or delivering <LogLink to="/open-source">open-source
+                            contributions</LogLink>.
                     </li>
                     <li>
-                        <strong className="text-zinc-900 dark:text-zinc-100 font-medium">Public Accountability:</strong> Sharing every update with my
-                        LinkedIn and Twitter (X) networks created a feedback loop that turned discipline into default behavior.
+                        <strong className="text-zinc-900 dark:text-zinc-100 font-medium">Public Accountability:</strong> Sharing every update with my{" "}
+                        <SocialLinks /> networks created a feedback loop that turned <LogLink to="/discipline">discipline</LogLink> into default behavior.
                     </li>
                     <li>
                         <strong className="text-zinc-900 dark:text-zinc-100 font-medium">Automatic Habit Loops:</strong> Over time, the challenge
@@ -74,7 +88,7 @@ export default function HundredDaysOfCode() {
             <LogFooter
                 text={
                     <p>
-                        “743 days and counting. Don't break the chain.”
+                        “{daysStreak} days and counting. Don't break the chain.”
                     </p>
                 }
             />

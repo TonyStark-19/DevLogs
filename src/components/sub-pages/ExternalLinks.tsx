@@ -260,3 +260,108 @@ export const Portfolio: React.FC<LinkProps> = ({ className = '' }) => {
         </a>
     );
 };
+
+// Independent MDN Docs Anchor Component
+export const MDNDocs: React.FC<LinkProps> = ({ className = '' }) => {
+    return (
+        <a
+            href="https://developer.mozilla.org/en-US"
+            target="_blank"
+            rel="noreferrer"
+            className={`font-medium text-zinc-900 dark:text-zinc-100 underline decoration-zinc-300 dark:decoration-zinc-700 underline-offset-4 
+            hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors duration-300 ease-in-out ${className}`}
+        >
+            MDN Web Docs
+        </a>
+    );
+};
+
+// Independent React Docs Anchor Component
+export const ReactDocs: React.FC<LinkProps> = ({ className = '' }) => {
+    return (
+        <a
+            href="https://react.dev/"
+            target="_blank"
+            rel="noreferrer"
+            className={`font-medium text-zinc-900 dark:text-zinc-100 underline decoration-zinc-300 dark:decoration-zinc-700 underline-offset-4 
+            hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors duration-300 ease-in-out ${className}`}
+        >
+            react.dev
+        </a>
+    );
+};
+
+// Independent Tailwind Docs Anchor Component
+export const TailwindDocs: React.FC<LinkProps> = ({ className = '' }) => {
+    return (
+        <a
+            href="https://tailwindcss.com/docs/installation/using-vite"
+            target="_blank"
+            rel="noreferrer"
+            className={`font-medium text-zinc-900 dark:text-zinc-100 underline decoration-zinc-300 dark:decoration-zinc-700 underline-offset-4 
+            hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors duration-300 ease-in-out ${className}`}
+        >
+            Tailwind CSS Docs
+        </a>
+    );
+};
+
+// Independent Chai or Code Anchor Component
+export const ChaiOrCode: React.FC<LinkProps> = ({ className = '' }) => {
+    return (
+        <a
+            href="www.youtube.com/@chaiaurcode"
+            target="_blank"
+            rel="noreferrer"
+            className={`font-medium text-zinc-900 dark:text-zinc-100 underline decoration-zinc-300 dark:decoration-zinc-700 underline-offset-4 
+            hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors duration-300 ease-in-out ${className}`}
+        >
+            Chai Or Code
+        </a>
+    );
+};
+
+// Independent Roadmap.sh Anchor Component
+export const Roadmap: React.FC<LinkProps> = ({ className = '' }) => {
+    return (
+        <a
+            href="https://roadmap.sh/"
+            target="_blank"
+            rel="noreferrer"
+            className={`font-medium text-zinc-900 dark:text-zinc-100 underline decoration-zinc-300 dark:decoration-zinc-700 underline-offset-4 
+            hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors duration-300 ease-in-out ${className}`}
+        >
+            roadmap.sh
+        </a>
+    );
+};
+
+// Independent medium Anchor Component
+export const Medium: React.FC<LinkProps> = ({ className = '' }) => {
+    return (
+        <a
+            href="https://medium.com/"
+            target="_blank"
+            rel="noreferrer"
+            className={`font-medium text-zinc-900 dark:text-zinc-100 underline decoration-zinc-300 dark:decoration-zinc-700 underline-offset-4 
+            hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors duration-300 ease-in-out ${className}`}
+        >
+            Medium
+        </a>
+    );
+};
+
+// Independent DevStash Anchor Component
+export const DevStash: React.FC<LinkProps> = ({ className = '' }) => {
+    return (
+        <a
+            href="https://devstash-nine.vercel.app/"
+            target="_blank"
+            rel="noreferrer"
+            className={`font-medium text-zinc-900 dark:text-zinc-100 underline decoration-zinc-300 dark:decoration-zinc-700 underline-offset-4 
+            hover:text-indigo-500 dark:hover:text-indigo-400 transition-colors duration-300 ease-in-out ${className}`}
+        >
+            DevStash
+        </a>
+    );
+};

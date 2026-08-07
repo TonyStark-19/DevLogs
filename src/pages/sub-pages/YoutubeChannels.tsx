@@ -22,40 +22,34 @@ export default function YoutubeChannels() {
             {/* Body Content Stream */}
             <div className="mt-8 space-y-6 dark:text-zinc-300 text-zinc-700 text-[15px] leading-relaxed antialiased">
                 <p>
-                    YouTube channels are a transformative resource in today's digital age, offering a wealth
-                    of information and opportunities for <LogLink to="/skills">skill</LogLink> development to anyone
-                    willing to invest their time and <LogLink to="/dedication">dedication</LogLink>.
+                    YouTube channels are a transformative resource in today's digital age, offering a wealth of information and opportunities for{" "}
+                    <LogLink to="/skills">skill</LogLink> development to anyone willing to invest their time and <LogLink to="/dedication">dedication</LogLink>.
                 </p>
 
                 <ul className="list-disc pl-5 space-y-2 text-zinc-600 dark:text-zinc-400">
                     <li>
-                        In this era where knowledge is at our fingertips, YouTube bridges the gap between
-                        traditional education and modern learning.
+                        In this era where knowledge is at our fingertips, YouTube bridges the gap between traditional education and modern learning.
                     </li>
                     <li>
-                        It becomes especially crucial when quality teachers or resources are not easily
-                        accessible in schools, universities, or local institutions. By simply searching for the
-                        right channels, learners can connect with some of the best educators and practitioners
-                        in any field, all available for free or minimal cost.
+                        It becomes especially crucial when quality teachers or resources are not easily accessible in schools, universities, or local institutions.
+                        By simply searching for the right channels, learners can connect with some of the best educators and practitioners in any field, all available
+                        for free or minimal cost.
                     </li>
                 </ul>
 
                 <p>
-                    The platform's versatility is unmatched, catering to an audience with diverse interests.
-                    Whether you're seeking tutorials, lectures, career advice, creative inspiration, or
-                    technical know-how, there's a channel for everything.
+                    The platform's versatility is unmatched, catering to an audience with diverse interests. Whether you're seeking tutorials, lectures, career
+                    advice, creative <LogLink to="/inspiration">inspiration</LogLink>, or technical know-how, there's a channel for everything.
                 </p>
 
                 <ul className="list-disc pl-5 space-y-2 text-zinc-600 dark:text-zinc-400">
                     <li>
-                        The only prerequisite is having the <LogLink to="/discipline">discipline</LogLink> and{' '}
-                        <LogLink to="/mindset">mindset</LogLink> to <LogLink to="/how-to-start">start</LogLink> learning and apply
-                        that knowledge <LogLink to="/consistency">consistently</LogLink>.
+                        The only prerequisite is having the <LogLink to="/discipline">discipline</LogLink> and <LogLink to="/mindset">mindset</LogLink> to{" "}
+                        <LogLink to="/how-to-start">start</LogLink> learning and apply that knowledge <LogLink to="/consistency">consistently</LogLink>.
                     </li>
                     <li>
-                        With YouTube, the barriers to learning are reduced significantly, empowering individuals
-                        to achieve their goals, learn new <LogLink to="/skills">skills</LogLink>, and explore
-                        their passions at their own pace.
+                        With YouTube, the barriers to learning are reduced significantly, empowering individuals to achieve their goals, learn new{" "}
+                        <LogLink to="/skills">skills</LogLink>, and explore their <LogLink to="/passion">passions</LogLink> at their own pace.
                     </li>
                 </ul>
 

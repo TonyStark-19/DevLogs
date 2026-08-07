@@ -3,6 +3,9 @@ import LogHeader from '../../components/sub-pages/LogHeader';
 import LogFooter from '../../components/sub-pages/LogFooter';
 import LogLink from '../../components/sub-pages/LogLink.tsx';
 
+// import external links
+import { GitHubLink } from '../../components/sub-pages/SocialLinks.tsx';
+
 // best practices page component
 export default function BestPractices() {
     return (
@@ -19,13 +22,13 @@ export default function BestPractices() {
             {/* Body Content Stream */}
             <div className="mt-8 space-y-6 dark:text-zinc-300 text-zinc-700 text-[15px] leading-relaxed antialiased">
                 <p>
-                    Best practices aren't learned overnight—they accumulate through months of hands-on building, trial, and error.
-                    Revisiting past projects to apply newly acquired engineering standards is one of the most effective ways to accelerate technical{" "}
+                    Best practices aren't learned overnight—they accumulate through months of hands-on <LogLink to="/project-building">building</LogLink>, trial,
+                    and error. Revisiting past projects to apply newly acquired engineering standards is one of the most effective ways to accelerate technical{" "}
                     <LogLink to="/growth">growth</LogLink>.
                 </p>
 
                 <p>
-                    Here is a curated list of non-negotiable best practices I follow to maintain clean code bases, professional GitHub repositories, and
+                    Here is a curated list of non-negotiable best practices I follow to maintain clean code bases, professional <GitHubLink /> repositories, and
                     production-grade applications:
                 </p>
 

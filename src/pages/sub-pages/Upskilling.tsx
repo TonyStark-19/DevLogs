@@ -19,8 +19,9 @@ export default function Upskilling() {
             {/* Body Content Stream */}
             <div className="mt-8 space-y-6 dark:text-zinc-300 text-zinc-700 text-[15px] leading-relaxed antialiased">
                 <p>
-                    Upskilling in the era of Artificial Intelligence is no longer just a good habit—it is the single most critical mindset a developer can adopt.
-                    The tech landscape has undergone a seismic shift, fundamentally altering how we learn, engineer systems, and build software.
+                    Upskilling in the era of Artificial Intelligence is no longer just a good habit—it is the single most critical{" "}
+                    <LogLink to="/mindset">mindset</LogLink> a developer can adopt. The tech landscape has undergone a seismic shift, fundamentally altering how we
+                    learn, engineer systems, and build software.
                 </p>
 
                 <p>
