@@ -9,6 +9,9 @@
     /* Light theme: zinc-300 */
     --dot-color-2: #e4e4e7;
     /* Light theme: zinc-200 */
+
+    /* transparency */
+    --dot-opacity: 0.03px;
 }
 
 .dark {
@@ -16,4 +19,7 @@
     /* Dark theme: slightly dimmed from #222 */
     --dot-color-2: #0f0f0f;
     /* Dark theme: slightly dimmed from #111 */
+
+    /* transparency */
+    --dot-opacity: 0.5px;
 }

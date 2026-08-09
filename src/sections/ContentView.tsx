@@ -67,8 +67,8 @@ export default function ContentView({ children, isLinksOpen, setIsLinksOpen }: C
             className="flex flex-1 w-full h-full relative transition-colors duration-300 bg-zinc-50 dark:bg-zinc-950"
             style={{
                 backgroundImage: `
-                    radial-gradient(circle at 25% 25%, var(--dot-color-1) 0.5px, transparent 1px),
-                    radial-gradient(circle at 75% 75%, var(--dot-color-2) 0.5px, transparent 1px)
+                    radial-gradient(circle at 25% 25%, var(--dot-color-1) var(--dot-opacity), transparent 1px),
+                    radial-gradient(circle at 75% 75%, var(--dot-color-2) var(--dot-opacity), transparent 1px)
                 `,
                 backgroundSize: '10px 10px',
                 imageRendering: 'pixelated',
