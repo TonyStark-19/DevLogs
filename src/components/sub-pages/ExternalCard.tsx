@@ -16,15 +16,15 @@ export default function ExternalCard({ href, icon: Icon, text, highlightText }: 
             href={href}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-start justify-between gap-4 p-4 rounded-xl border transition-all duration-300 group 
-            dark:bg-zinc-900/20 bg-zinc-100/40 border-zinc-200 dark:border-zinc-900 hover:border-zinc-300 
-            dark:hover:border-zinc-800 hover:bg-zinc-200/30 dark:hover:bg-zinc-900/40 shadow-xs"
+            className="flex items-start justify-between gap-4 p-4 rounded-xl border transition-all duration-300 group dark:bg-zinc-900/20 bg-zinc-100/40 
+            border-zinc-200 dark:border-zinc-900 hover:border-zinc-300 dark:hover:border-zinc-800 hover:bg-zinc-200/30 dark:hover:bg-zinc-900/40 
+            shadow-xs"
         >
             <div className="flex items-start gap-3 text-sm">
                 {/* Dynamic Vector Wrapper */}
                 <div
-                    className="mt-0.5 shrink-0 dark:text-zinc-500 text-zinc-400 group-hover:text-zinc-900 dark:group-hover:text-zinc-100 
-                    transition-colors duration-200"
+                    className="mt-0.5 shrink-0 dark:text-zinc-500 text-zinc-400 group-hover:text-zinc-900 dark:group-hover:text-zinc-100 transition-colors 
+                    duration-200"
                 >
                     <Icon className="h-5 w-5 stroke-[1.75]" />
                 </div>
@@ -45,8 +45,8 @@ export default function ExternalCard({ href, icon: Icon, text, highlightText }: 
             {/* Link Indicator Icon */}
             <ArrowUpRight
                 size={16}
-                className="text-zinc-400 dark:text-zinc-600 group-hover:text-zinc-900 dark:group-hover:text-zinc-200 transition-colors 
-                shrink-0 mt-0.5 duration-200"
+                className="text-zinc-400 dark:text-zinc-600 group-hover:text-zinc-900 dark:group-hover:text-zinc-200 transition-colors shrink-0 mt-0.5 
+                duration-200"
             />
         </a>
     );

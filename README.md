@@ -56,12 +56,14 @@ The project is live and can be viewed here: [DevLogs](https://devlogs-henna.verc
 
 ## ✨ Why DevLogs?
 
-* Document lessons, experiences, and insights gathered throughout my development journey.
-* Transform technical concepts, challenges, and learnings into practical and easy-to-understand notes.
-* Build a personal knowledge base that can be revisited, refined, and expanded over time.
-* Share resources, tools, and perspectives that have helped me grow as a developer.
-* Explore topics beyond code, including productivity, discipline, mindset, health, and continuous learning.
-* Create a space where developers can discover ideas, avoid common mistakes, and learn from real experiences.
+| Purpose | Description |
+|:---|:---|
+| **Document the Journey** | Record lessons, experiences, and insights gathered throughout my development journey. |
+| **Simplify Technical Learning** | Turn technical concepts, challenges, and learnings into practical, easy-to-understand notes. |
+| **Build a Knowledge Base** | Create a personal knowledge repository that can be revisited, refined, and expanded over time. |
+| **Share Valuable Resources** | Share useful resources, tools, and perspectives that have contributed to my growth as a developer. |
+| **Explore Beyond Coding** | Cover topics such as productivity, discipline, mindset, health, and continuous learning. |
+| **Help the Developer Community** | Create a space where developers can discover ideas, avoid common mistakes, and learn from real-world experiences. |
 
 ---
 

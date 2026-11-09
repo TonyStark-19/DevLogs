@@ -17,13 +17,13 @@ export default function ProfileBanner({ setIsDarkMode, isDarkMode }: ProfileBann
             <img
                 src="/images/profile.jpg"
                 alt="Aditya Chandel"
-                className="absolute inset-0 w-full h-full object-cover z-0 sm:grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all 
-                duration-700 ease-out"
+                className="absolute inset-0 w-full h-full object-cover z-0 sm:grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 
+                ease-out"
             />
 
             <div
-                className="absolute inset-0 z-10 bg-linear-to-t dark:from-zinc-950 dark:via-zinc-950/50 dark:to-transparent 
-                from-zinc-50 via-zinc-50/60 to-transparent"
+                className="absolute inset-0 z-10 bg-linear-to-t dark:from-zinc-950 dark:via-zinc-950/50 dark:to-transparent from-zinc-50 via-zinc-50/60 
+                to-transparent"
             />
 
             <div className="relative z-20 flex justify-between items-end w-full">

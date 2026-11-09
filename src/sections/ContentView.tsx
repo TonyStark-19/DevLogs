@@ -87,8 +87,8 @@ export default function ContentView({ children, isLinksOpen, setIsLinksOpen }: C
             {/* Middle Workspace Layout */}
             <main
                 id="main-scroll-wrapper"
-                className="flex-1 overflow-y-auto px-1 flex flex-col min-h-full relative z-10 scrollbar-thin 
-                dark:scrollbar-thumb-zinc-900 scrollbar-thumb-zinc-200 scroll-smooth max-xl:justify-start"
+                className="flex-1 overflow-y-auto px-1 flex flex-col min-h-full relative z-10 scrollbar-thin dark:scrollbar-thumb-zinc-900 scrollbar-thumb-zinc-200 
+                scroll-smooth max-xl:justify-start"
             >
                 {/* Core Content Box */}
                 <div

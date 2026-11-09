@@ -11,8 +11,8 @@ export default function LogHeader({ title, subtitle }: LogHeaderProps) {
             <div className="flex items-start gap-4">
                 {/* Decorative left accent line that pops on hover */}
                 <div
-                    className="w-1 h-10 rounded-full bg-zinc-300 dark:bg-zinc-800 group-hover:bg-zinc-500 dark:group-hover:bg-zinc-400 
-                    transition-colors duration-300 mt-1 shrink-0"
+                    className="w-1 h-10 rounded-full bg-zinc-300 dark:bg-zinc-800 group-hover:bg-zinc-500 dark:group-hover:bg-zinc-400 transition-colors 
+                    duration-300 mt-1 shrink-0"
                 />
 
                 <div className="space-y-2 flex-1">
@@ -30,8 +30,8 @@ export default function LogHeader({ title, subtitle }: LogHeaderProps) {
 
             {/* Fading border line instead of a harsh flat hr rule */}
             <div
-                className="mt-8 h-px w-full bg-linear-to-r from-zinc-200 via-zinc-100 to-transparent dark:from-zinc-800 dark:via-zinc-900 
-                dark:to-transparent transition-colors duration-300"
+                className="mt-8 h-px w-full bg-linear-to-r from-zinc-200 via-zinc-100 to-transparent dark:from-zinc-800 dark:via-zinc-900 dark:to-transparent 
+                transition-colors duration-300"
             />
         </div>
     );
