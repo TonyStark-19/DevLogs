@@ -67,6 +67,8 @@ The project is live and can be viewed here: [DevLogs](https://devlogs-henna.verc
 
 ---
 
+## 📚 Explore All Pages
+
 |  # | Topic             | Description                                                                                                          |
 | -: | ----------------- | -------------------------------------------------------------------------------------------------------------------- |
 |  1 | #100DaysOfCode    | Building a daily coding habit through consistency, accountability, and continuous learning.                          |
